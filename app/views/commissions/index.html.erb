@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<div class="header">
+  <h1>Commissions</h1>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Character</th>
+      <th>Variation</th>
+      <th>Notes</th>
+      <th>Thumbnail</th>
+      <th>Year</th>
+      <th>Show</th>
+      <th>Genre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @commissions.each do |commission| %>
+      <tr>
+        <td><%= commission.character %></td>
+        <td><%= commission.variation %></td>
+        <td><%= commission.notes %></td>
+        <td><%= commission.thumbnail %></td>
+        <td><%= commission.year_id %></td>
+        <td><%= commission.show_id %></td>
+        <td><%= commission.genre_id %></td>
+        <td><%= link_to 'Show', commission %></td>
+        <td><%= link_to 'Edit', edit_commission_path(commission) %></td>
+        <td><%= link_to 'Destroy', commission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Commission', new_commission_path %>

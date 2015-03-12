@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character:</strong>
+  <%= @commission.character %>
+</p>
+
+<p>
+  <strong>Variation:</strong>
+  <%= @commission.variation %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @commission.notes %>
+</p>
+
+<p>
+  <strong>Thumbnail:</strong>
+  <%= @commission.thumbnail %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @commission.year_id %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @commission.show_id %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @commission.genre_id %>
+</p>
+
+<%= link_to 'Edit', edit_commission_path(@commission) %> |
+<%= link_to 'Back', commissions_path %>

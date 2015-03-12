@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character:</strong>
+  <%= @costume.character %>
+</p>
+
+<p>
+  <strong>Variation:</strong>
+  <%= @costume.variation %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @costume.notes %>
+</p>
+
+<p>
+  <strong>Awards:</strong>
+  <%= @costume.awards %>
+</p>
+
+<p>
+  <strong>Thumbnail:</strong>
+  <%= @costume.thumbnail %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @costume.year_id %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @costume.show_id %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @costume.genre_id %>
+</p>
+
+<%= link_to 'Edit', edit_costume_path(@costume) %> |
+<%= link_to 'Back', costumes_path %>

@@ -1,0 +1,198 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/** {
+	border: 1px solid black;
+}*/
+
+/* GENERAL */
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body a:hover {
+	text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar-brand img {
+	padding-bottom: 10px;
+}
+
+/* HOME PAGE */
+.jumbotron {
+	background-image: url("header.jpg");
+	padding: 20%;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.jumbotron h1 {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 5em;
+	font-weight: 700;
+	color: #323232;
+	position: absolute;
+	left: 0;
+	padding-left: 20px;
+}
+
+.blurb {
+	background-color: #323232;
+	color: #f7fafe;
+	margin-top: -30px;
+}
+
+.blurb h3 {
+	padding: 5% 10%;
+	text-align: center;
+	position: center;
+	font-size: 1.5em;
+	margin-top: -5px;
+	font-weight: normal;
+}
+
+.features {
+	padding: 2%;
+	width: 100%;
+}
+
+.features img {
+	width: 300px;
+	margin: 2% auto;
+	border-radius: 50%;
+}
+
+.features p {
+	text-align: center;
+	color: #323232;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+
+/* SUB-PAGES */
+.header {
+	background-image: url("header.jpg");
+	background-repeat: repeat-x;
+}
+
+.header h1{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-align: right;
+	color: #323232;
+	padding-top: 75px;
+	margin-right: 2%;
+}
+
+.year {
+	margin-left: 30px;
+	width: 100%;
+
+}
+
+.gallery {
+	width: 100%;
+}
+
+.gallery img {
+	margin: auto;
+	padding: 10px 0;
+}
+
+/* ABOUT PAGE */
+#bio img {
+	position: center;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#bio p {
+	font-size: 1.25em;
+	text-align: right;
+	color: #323232;
+	padding-top: 25px;
+}
+
+/* CONTACT PAGE*/
+#contact li {
+	display: block;
+	list-style: none;
+	margin: 40px 0;
+	text-align: right;
+}
+
+#contact img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#contact a {
+	font-size: 1.25em;
+	color: #323232;
+}
+
+#contact a:hover {
+	color: #ff6f4d;
+}
+
+/* COMING SOON */
+.coming-soon {
+	text-align: center;
+	margin: 300px 0;
+	width: 100%;
+}
+
+/* FOOTER */
+footer {
+	background-color: #ff6f4d;
+	position: absolute;
+	width: 100%;
+	margin-top: 40px;
+}
+
+footer li {
+	color: #f7fafe;
+	display: inline-block;
+	list-style: none;
+	padding: 2%;
+	float: right;
+}
+
+.footer-link:hover {
+	color: #323232;
+}
+
+.footer-link:visited {
+	color: #f7fafe;
+}
+
+footer p {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.5em;
+	float: left;
+	padding: 2%;
+}
+
+.footer-link, footer p {
+	color: #f7fafe;
+	vertical-align: middle;
+}
