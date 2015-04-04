@@ -4,93 +4,22 @@
   <h1>Commissions</h1>
 </div>
 
-<div class="row year">
-    <h2>2015</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
+<div class="container-fluid">
+    <% @years.sort_by{|t| - t.created_at.to_i}.each do |year| %>
+        <div class="row year">
+          <% if year.commissions.exists? %>
+            <h2><%= year.year %></h2>
+          <% end %>
         </div>
-    </div>
-</div>
 
-<div class="row year">
-    <h2>2014</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
+        <div class="container-fluid gallery">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 center-block">
+                    <% year.commissions.each do |commission| %>
+                            <%= image_tag(commission.thumbnail, class: "img-responsive") %>
+                    <% end %>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2013</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2012</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2011</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Character</th>
-      <th>Variation</th>
-      <th>Notes</th>
-      <th>Thumbnail</th>
-      <th>Year</th>
-      <th>Show</th>
-      <th>Genre</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @commissions.each do |commission| %>
-      <tr>
-        <td><%= commission.character %></td>
-        <td><%= commission.variation %></td>
-        <td><%= commission.notes %></td>
-        <td><%= commission.thumbnail %></td>
-        <td><%= commission.year_id %></td>
-        <td><%= commission.show_id %></td>
-        <td><%= commission.genre_id %></td>
-        <td><%= link_to 'Show', commission %></td>
-        <td><%= link_to 'Edit', edit_commission_path(commission) %></td>
-        <td><%= link_to 'Destroy', commission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Commission', new_commission_path %>
+</div>

@@ -5,6 +5,7 @@ class CommissionsController < ApplicationController
   # GET /commissions.json
   def index
     @commissions = Commission.all
+    @years = Year.all
   end
 
   # GET /commissions/1

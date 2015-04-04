@@ -5,6 +5,7 @@ class CostumesController < ApplicationController
   # GET /costumes.json
   def index
     @costumes = Costume.all
+    @years = Year.all
   end
 
   # GET /costumes/1

@@ -4,117 +4,22 @@
     <h1>Costumes</h1>
 </div>
 
-<div class="row year">
-    <h2>2015</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
+<div class="container-fluid">
+    <% @years.sort_by{|t| - t.created_at.to_i}.each do |year| %>
+        <div class="row year">
+            <% if year.costumes.exists? %>
+                <h2><%= year.year %></h2>
+            <% end %>
         </div>
-    </div>
-</div>
 
-<div class="row year">
-    <h2>2014</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
+        <div class="container-fluid gallery">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 center-block">
+                    <% year.costumes.each do |costume| %>
+                            <%= link_to image_tag(costume.thumbnail, class: "img-responsive"), costume_path(costume.id) %>
+                    <% end %>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2013</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2012</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2011</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2010</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<div class="row year">
-    <h2>2002-2009</h2>
-</div>
-<div class="container-fluid gallery">
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 center-block">
-        <!-- THUMBNAILS -->
-        </div>
-    </div>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Character</th>
-      <th>Variation</th>
-      <th>Notes</th>
-      <th>Awards</th>
-      <th>Thumbnail</th>
-      <th>Year</th>
-      <th>Show</th>
-      <th>Genre</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @costumes.each do |costume| %>
-      <tr>
-        <td><%= costume.character %></td>
-        <td><%= costume.variation %></td>
-        <td><%= costume.notes %></td>
-        <td><%= costume.awards %></td>
-        <td><%= costume.thumbnail %></td>
-        <td><%= costume.year_id %></td>
-        <td><%= costume.show_id %></td>
-        <td><%= costume.genre_id %></td>
-        <td><%= link_to 'Show', costume %></td>
-        <td><%= link_to 'Edit', edit_costume_path(costume) %></td>
-        <td><%= link_to 'Destroy', costume, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Costume', new_costume_path %>
+</div>
