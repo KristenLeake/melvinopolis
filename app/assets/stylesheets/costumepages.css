@@ -1,0 +1,35 @@
+/* INDEX PAGES */
+.header {
+	background-image: url("header.jpg");
+	background-repeat: repeat-x;
+}
+
+.header h1{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-align: right;
+	color: #323232;
+	padding-top: 75px;
+	margin-right: 2%;
+}
+
+.year {
+	margin-left: 30px;
+	width: 100%;
+}
+
+.gallery {
+	width: 100%;
+}
+
+.gallery img {
+	margin: auto;
+	padding: 10px 0;
+}
+
+.sort {
+	width: 110px;
+}
+
+/* SHOW PAGES */

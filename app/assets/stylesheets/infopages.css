@@ -1,0 +1,82 @@
+/* ABOUT PAGE */
+.headshot img {
+	position: center;
+	margin: auto;
+	padding: 25px;
+}
+
+.bio {
+	font-size: 1.15em;
+	text-align: right;
+	color: #323232;
+	padding-top: 25px;
+}
+
+/* CONTACT PAGE*/
+#contact li {
+	display: block;
+	list-style: none;
+	margin: 40px 0;
+	text-align: right;
+}
+
+#contact img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#contact a {
+	font-size: 1.25em;
+	color: #323232;
+}
+
+#contact a:hover {
+	color: #ff6f4d;
+}
+
+/* SHOPS PAGE */
+
+.shop {
+	width: 100%;
+	padding: 2%;
+}
+
+.shop img {
+	margin: 2% auto;
+}
+
+.thumbs {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.thumbs img {
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+}
+
+.request {
+	width: 85%;
+	text-align: center;
+	margin: 3% auto;
+}
+
+.request p {
+	font-size: 1.15em;
+}
+
+.request a {
+	color: #ff6f4d;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 1.25em;
+}
+
+
+/* COMING SOON */
+.coming-soon {
+	text-align: center;
+	margin: 300px 0;
+	width: 100%;
+}

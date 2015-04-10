@@ -1,10 +1,10 @@
-<p id="notice"><%= notice %></p>
-
 <div class="header">
     <h1>Costumes</h1>
 </div>
 
-<div class="container-fluid">
+<%= link_to "Sort by Genre", genres_path, type: "button", class: "btn btn-default btn-lg center-block sort" %>
+
+<div class="container-fluid ">
     <% @years.sort_by{|t| - t.created_at.to_i}.each do |year| %>
         <div class="row year">
             <% if year.costumes.exists? %>

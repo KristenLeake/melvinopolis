@@ -14,5 +14,17 @@ ActiveAdmin.register Commission do
   #   permitted
   # end
 
+    form do |f|
+    f.inputs do
+      f.input :year, :collection => Year.all.map{ |year| [year.year, year.id] }
+      f.input :genre, :collection => Genre.all.map{ |genre| [genre.name, genre.id] }
+      f.input :show, :collection => Show.all.map{ |show| [show.series, show.id] }
+      f.input :character, label: "Character"
+      f.input :variation, label: "Variation"
+      f.input :notes, label: "Notes"
+      f.input :thumbnail, label: "Thumbnail"
+    end
+    f.actions
+  end
 
 end
