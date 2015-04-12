@@ -14,11 +14,11 @@
 
         <div class="container-fluid gallery">
             <div class="row">
-                <div class="col-xs-6 col-sm-3 center-block">
-                    <% year.commissions.each do |commission| %>
-                            <%= image_tag(commission.thumbnail, class: "img-responsive") %>
-                    <% end %>
-                </div>
+                <% year.commissions.sort_by{|t| - t.created_at.to_i}.each do |commission| %>
+                    <div class="col-xs-6 col-sm-3 center-block">
+                        <%= image_tag(commission.thumbnail, class: "img-responsive") %>
+                    </div>
+                <% end %>
             </div>
         </div>
     <% end %>

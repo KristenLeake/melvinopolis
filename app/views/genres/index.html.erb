@@ -14,11 +14,11 @@
 
         <div class="container-fluid gallery">
             <div class="row">
-                <div class="col-xs-6 col-sm-3 center-block">
-                    <% genre.costumes.each do |costume| %>
-                            <%= link_to image_tag(costume.thumbnail, class: "img-responsive"), costume_path(costume.id) %>
-                    <% end %>
-                </div>
+                <% genre.costumes.sort_by{|t| - t.created_at.to_i}.each do |costume| %>
+                    <div class="col-xs-6 col-sm-3 center-block">
+                        <%= link_to image_tag(costume.thumbnail, class: "img-responsive"), costume_path(costume.id) %>
+                    </div>
+                <% end %>
             </div>
         </div>
     <% end %>

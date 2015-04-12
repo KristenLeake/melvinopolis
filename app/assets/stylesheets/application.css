@@ -34,6 +34,22 @@ body {
 	height: 30px;
 }
 
+.header {
+	background-image: url("header.jpg");
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+.header h1{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-align: right;
+	color: #323232;
+	padding-top: 75px;
+	margin-right: 2%;
+}
+
 /* FOOTER */
 footer {
 	background-color: #ff6f4d;

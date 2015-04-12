@@ -2,6 +2,28 @@
 	<h1>Contact</h1>
 </div>
 
-<div class="coming-soon">
-	<h2>Coming Soon!</h2>
-</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 placeholder">		  		
+		  	<!-- Email form goes here -->
+		</div>
+
+		<div class="col-xs-12 col-sm-6 contact">
+			<ul id="general-links">
+				<li><%= link_to image_tag("contact/twitter.png", class: "img-responsive"), "//www.twitter.com/melvinopolis", target: "_blank" %></li>
+				<li><%= link_to image_tag("contact/instagram.png", class: "img-responsive"), "//www.instagram.com/melvinopolis", target: "_blank" %></li>
+				<li><%= link_to image_tag("contact/facebook.png", class: "img-responsive"), "//www.facebook.com/melvincosplay", target: "_blank" %></li>
+			</ul>
+			
+			<ul id="work-links">
+				<li><%= link_to image_tag("contact/github.png", class: "img-responsive"), "//github.com/melvinopolis", target: "_blank" %></li>
+				<li><%= link_to image_tag("contact/linkedin.png", class: "img-responsive"), "//www.linkedin.com/in/melvinopoils", target: "_blank" %></li>
+			</ul> 
+
+			<ul id="cosplay-links">
+				<li><%= link_to image_tag("contact/cospix.png", class: "img-responsive"), "//cospix.net/melvinopolis/", target: "_blank" %></li>
+				<li><%= link_to image_tag("contact/acp.png", class: "img-responsive"), "//www.acparadise.com/loves/melvin", target: "_blank" %></li>
+			</ul>
+		</div>
+	</div>
+</div>	
