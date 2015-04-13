@@ -1,0 +1,15 @@
+/*CODE PAGE*/
+
+.projects {
+	margin: 5% 0 15%;
+}
+
+.projects img {
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 10px 0;
+}
+
+.projects p {
+	text-align: center;
+}

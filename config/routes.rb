@@ -22,9 +22,13 @@ Rails.application.routes.draw do
 
   get '/contact' => 'info#contact'
 
-  get '/code' => 'info#code'
+  get '/webdev' => 'info#code'
 
   get '/shops' => 'info#shops'
+
+  get '/webdev/melvinopolis' => 'info#melvinopolis'
+
+  get '/webdev/gllry' => 'info#gllry'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

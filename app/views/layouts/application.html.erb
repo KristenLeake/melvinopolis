@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Favicon -->
-  	<%= favicon_link_tag('#') %>
+  	<%= favicon_link_tag 'favicon.ico' %>
 
   	<title>melvinopolis</title>
 
@@ -34,7 +34,7 @@
             <div class='collapse navbar-collapse' id="bs-example-navbar-collapse-1">
                 <ul class='nav navbar-nav'>
                     <li><%= link_to 'home', root_path %></li>
-                    <li><%= link_to 'code', code_path %></li>
+                    <li><%= link_to 'code', webdev_path %></li>
                     <li><%= link_to 'costumes', costumes_path %></li>
                     <li><%= link_to 'commissions', commissions_path %></li>
                     <li><%= link_to 'shops', shops_path %></li>
@@ -53,10 +53,10 @@
 	<footer class='container-fluid'>
 		<p>&copy; mariel van norman 2015</p>
 	        <ul>
-	            <li><%= link_to 'home', root_path, :class => "footer-link" %></li>
-	            <li><%= link_to 'about', about_path, :class => "footer-link" %></li>
-                <li><%= link_to 'contact', contact_path, :class => "footer-link" %></li>
-	            <li><%= link_to 'shops', shops_path, :class => "footer-link" %></li>
+	            <li><%= link_to 'home', root_path %></li>
+	            <li><%= link_to 'about', about_path %></li>
+                <li><%= link_to 'contact', contact_path %></li>
+	            <li><%= link_to 'shops', shops_path %></li>
 	        </ul>
 	</footer>
 

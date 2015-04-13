@@ -1,7 +1,17 @@
 <div class="header">
-	<h1>Code</h1>
+	<h1>Web Development</h1>
 </div>
 
-<div class="coming-soon">
-	<h2>Coming Soon!</h2>
+<div class="container-fluid projects">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 center-block">
+			<%= link_to image_tag("code/melvin.png", class: "img-responsive"), webdev_melvinopolis_path %>
+			<p>This website!</p>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-3 center-block">
+			<%= link_to image_tag("code/gllry.png", class: "img-responsive"), webdev_gllry_path %>
+			<p>gllry: An art portfolio website</p>
+		</div>
+	</div>
 </div>

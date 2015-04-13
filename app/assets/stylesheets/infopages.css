@@ -6,10 +6,11 @@
 }
 
 .bio {
-	font-size: 1.15em;
-	text-align: right;
+	font-size: 1.2em;
+	text-align: left;
 	color: #323232;
-	padding-top: 25px;
+	padding: 40px;
+	margin-bottom: 40px;
 }
 
 
@@ -29,6 +30,7 @@
 .shop {
 	width: 100%;
 	padding: 2%;
+	margin-bottom: 30px;
 }
 
 .shop img {
@@ -36,20 +38,19 @@
 }
 
 .thumbs {
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
+
 }
 
 .thumbs img {
-	display: inline-block;
 	margin: auto;
-	padding: 10px;
 }
 
 .request {
 	width: 85%;
 	text-align: center;
-	margin: 3% auto;
+	margin: 3% auto 30px;
 }
 
 .request p {

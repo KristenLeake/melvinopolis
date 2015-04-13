@@ -1,32 +1,27 @@
+/*HOME PAGE*/
+
 .jumbotron {
 	background-image: url("header.jpg"); 
-	padding: 20%;
+	padding: 10%;
 	background-repeat: no-repeat;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
 }
 
-.jumbotron h1 {
-	position: absolute;
-	left: -30px;
-	max-height: 75px;
-	top: 1%;
-}
-
 .blurb {
 	background-color: #323232;
-	color: #f7fafe;
 	margin-top: -30px;
 }
 
 .blurb h3 {
-	padding: 5% 10%;
-	text-align: center;
-	position: center;
-	font-size: 1.5em;
+	padding: 3%;
 	margin-top: -5px;
-	font-weight: normal;
+	margin-bottom: -5px;
+}
+
+.blurb img {
+	margin: auto;
 }
 
 .features {

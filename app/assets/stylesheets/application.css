@@ -55,12 +55,7 @@ footer {
 	background-color: #ff6f4d;
 	position: absolute;
 	width: 100%;
-}
-
-.footer-link, footer p {
 	color: #f7fafe;
-	vertical-align: middle;
-	font-size: 1.15em;
 }
 
 footer p {
@@ -71,17 +66,18 @@ footer p {
 }
 
 footer li {
-	color: #f7fafe;
+	font-size: 1.15em;
 	display: inline-block;
 	list-style: none;
 	padding: 2%;
 	float: right;
 }
 
-.footer-link:hover {  /* NOT WORKING */
+footer a:hover {  /* NOT WORKING */
 	color: #323232;
+	/*text-decoration: none;*/
 }
 
-.footer-link:visited {
+footer li a:visited {
 	color: #f7fafe;
 }

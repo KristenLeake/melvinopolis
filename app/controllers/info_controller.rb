@@ -13,4 +13,10 @@ class InfoController < ApplicationController
 
   def shops
   end
+
+  def melvinopolis
+  end
+
+  def gllry
+  end
 end
