@@ -73,11 +73,6 @@ footer li {
 	float: right;
 }
 
-footer a:hover {  /* NOT WORKING */
-	color: #323232;
-	/*text-decoration: none;*/
-}
-
 footer li a:visited {
 	color: #f7fafe;
 }

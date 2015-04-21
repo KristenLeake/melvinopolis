@@ -2,42 +2,60 @@
   <h1>Costumes</h1>
 </div>
 
-<p>
-  <strong>Character:</strong>
-  <%= @costume.character %>
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="icon">
+                <%= image_tag(@costume.thumbnail, class: "img-responsive") %>
+            </div>
+            
+            <ul class="row image-gallery">
+                <% @costume.photos.each do |picture| %>
+                    <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, alt: picture.caption, class: "img-responsive") %></li>
+                <% end %>
+            </ul> 
+        </div>
 
-<p>
-  <strong>Variation:</strong>
-  <%= @costume.variation %>
-</p>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">         
+                    <div class="modal-body">                
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
-<p>
-  <strong>Notes:</strong>
-  <%= @costume.notes %>
-</p>
+        <div class="col-xs-12 col-sm-6 notes">
+            <h2><%= @costume.character %></h2>
 
-<p>
-  <strong>Awards:</strong>
-  <%= @costume.awards %>
-</p>
+            <% if @costume.variation.presence %>
+                <p>
+                  <span class="title">Variation:</span>
+                  <%= @costume.variation %>
+                </p>
+            <% end %>
 
-<p>
-  <strong>Thumbnail:</strong>
-  <%= @costume.thumbnail %>
-</p>
+            <p>
+               <span class="title">Series:</span> 
+               <%= @costume.show.series %> 
+            </p>
 
-<p>
-  <strong>Year:</strong>
-  <%= @costume.year_id %>
-</p>
+            <p>
+                <span class="title">Notes:</span> 
+                <%= simple_format(@costume.notes) %>
+            </p>
 
-<p>
-  <strong>Show:</strong>
-  <%= @costume.show_id %>
-</p>
+            <% if @costume.awards.presence %>
+                <p>
+                   <span class="title">Awards:</span> 
+                   <%= @costume.awards %> 
+                </p>
+            <% end %>
 
-<p>
-  <strong>Genre:</strong>
-  <%= @costume.genre_id %>
-</p>
+            <p>
+                <span class="title">Made in:</span> 
+                <%= @costume.year.year %>
+            </p>
+        </div>
+    </div>
+</div>

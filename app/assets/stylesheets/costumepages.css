@@ -19,3 +19,78 @@
 }
 
 /* SHOW PAGES */
+
+.icon img {
+	margin: 2% auto 4%;
+}
+
+.image-gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.image-gallery li {
+	margin: 1% auto;
+}
+
+.image-gallery img:hover {
+	opacity: .5;
+}
+
+.notes {
+	padding: 3%;
+	font-size: 1.25em;
+}
+
+.notes .title {
+	font-weight: 700;
+	font-size: .85em;
+}
+
+.notes h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.5em;
+}
+
+
+/* MODAL */
+
+.modal-body img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.controls {          
+    display: block;
+    font-size: 1.2em;
+    padding-top:8px;
+    font-weight: bold;          
+}
+
+.next {
+    float: right;
+    text-align: right;
+}
+
+.next, .previous {
+	text-decoration: none;
+	color: #323232;
+}
+
+.next:hover, .previous:hover {
+	text-decoration: none;
+	color: #ff6f4d;
+}
+
+.caption {
+	text-align: center;
+	font-size: 1.2em;
+	color: #323232;
+}
+
+.caption a {
+	text-decoration: none;
+	color: #ff6f4d;
+}

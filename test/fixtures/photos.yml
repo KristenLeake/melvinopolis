@@ -3,7 +3,11 @@
 one:
   costume_id: 1
   commission_id: 1
+  picture: MyString
+  caption: MyString
 
 two:
   costume_id: 1
   commission_id: 1
+  picture: MyString
+  caption: MyString

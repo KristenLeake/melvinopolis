@@ -2,37 +2,53 @@
   <h1>Commissions</h1>
 </div>
 
-<p>
-  <strong>Character:</strong>
-  <%= @commission.character %>
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="icon">
+                <%= image_tag(@commission.thumbnail, class: "img-responsive") %>
+            </div>
+            
+            <ul class="row image-gallery">
+                <% @commission.photos.each do |picture| %>
+                    <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, alt: picture.caption, class: "img-responsive") %></li>
+                <% end %>
+            </ul> 
+        </div>
 
-<p>
-  <strong>Variation:</strong>
-  <%= @commission.variation %>
-</p>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">         
+                    <div class="modal-body">                
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
-<p>
-  <strong>Notes:</strong>
-  <%= @commission.notes %>
-</p>
+        <div class="col-xs-12 col-sm-6 notes">
+            <h2><%= @commission.character %></h2>
 
-<p>
-  <strong>Thumbnail:</strong>
-  <%= @commission.thumbnail %>
-</p>
+            <% if @commission.variation.presence %>
+                <p>
+                  <span class="title">Variation:</span>
+                  <%= @commission.variation %>
+                </p>
+            <% end %>
 
-<p>
-  <strong>Year:</strong>
-  <%= @commission.year_id %>
-</p>
+            <p>
+               <span class="title">Series:</span> 
+               <%= @commission.show.series %> 
+            </p>
 
-<p>
-  <strong>Show:</strong>
-  <%= @commission.show_id %>
-</p>
+            <p>
+                <span class="title">Notes:</span> 
+                <%= simple_format(@commission.notes) %>
+            </p>
 
-<p>
-  <strong>Genre:</strong>
-  <%= @commission.genre_id %>
-</p>
+            <p>
+                <span class="title">Made in:</span> 
+                <%= @commission.year.year %>
+            </p>
+        </div>
+    </div>
+</div>
