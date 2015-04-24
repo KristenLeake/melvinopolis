@@ -19,7 +19,6 @@ $(document).ready(function(){
         $('#myModal').on('shown.bs.modal', function(){
             $('#myModal .modal-body').html(html);
             $('#myModal .modal-footer').html(caption);
-
             $('a.controls').trigger('click');
         })
         $('#myModal').on('hidden.bs.modal', function(){

@@ -32,12 +32,22 @@
 }
 
 .image-gallery li {
+	/*float: left;
+	display: block;*/
 	margin: 1% auto;
 }
 
 .image-gallery img:hover {
 	opacity: .5;
 }
+
+/*.image-gallery li.col-xs-6:nth-child(3n) {
+	clear: left;
+}*/
+
+/*.image-gallery li.col-md-4:nth-child(4n) {
+	clear: left;
+}*/
 
 .notes {
 	padding: 3%;
