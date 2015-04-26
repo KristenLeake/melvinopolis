@@ -12,18 +12,18 @@ $(document).ready(function(){
         html += '<a class="controls previous" href="' + (index) + '">&laquo; previous</a>';
         html += '</div>';
 
-        var caption = '';
-        html += '<p class="caption">' + $(this).attr('alt') + '</p>'
+        // var caption = '';
+        // html += '<p class="caption">' + $(this).attr('alt') + '</p>'
             
         $('#myModal').modal();
         $('#myModal').on('shown.bs.modal', function(){
             $('#myModal .modal-body').html(html);
-            $('#myModal .modal-footer').html(caption);
+            // $('#myModal .modal-footer').html(caption);
             $('a.controls').trigger('click');
         })
         $('#myModal').on('hidden.bs.modal', function(){
             $('#myModal .modal-body').html('');
-            $('#myModal .modal-footer').html('');
+            // $('#myModal .modal-footer').html('');
         });
     });  
 });
@@ -31,7 +31,7 @@ $(document).ready(function(){
 $(document).on('click', 'a.controls', function(){
     var index = $(this).attr('href');
     var src = $('ul.row li:nth-child('+ index +') img').attr('src');    
-    // var caption =  $(this).attr('alt')       
+    // var caption =  $(this).attr('alt');       
         
     $('.modal-body img').attr('src', src);
     // $('.modal-footer').attr('alt', caption);

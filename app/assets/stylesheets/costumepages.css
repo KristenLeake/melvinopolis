@@ -14,6 +14,10 @@
 	padding: 10px 0;
 }
 
+.gallery img:hover {
+	opacity: .5;
+}
+
 .sort {
 	width: 110px;
 }
@@ -32,22 +36,12 @@
 }
 
 .image-gallery li {
-	/*float: left;
-	display: block;*/
 	margin: 1% auto;
 }
 
 .image-gallery img:hover {
 	opacity: .5;
 }
-
-/*.image-gallery li.col-xs-6:nth-child(3n) {
-	clear: left;
-}*/
-
-/*.image-gallery li.col-md-4:nth-child(4n) {
-	clear: left;
-}*/
 
 .notes {
 	padding: 3%;
@@ -60,8 +54,22 @@
 }
 
 .notes h2 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', sans-serif;
 	font-size: 2.5em;
+}
+
+.notes a, a:visited {
+	color: #ff6f4d;
+	text-decoration: none;
+}
+
+.notes a:hover {
+	color: #323232;
+	text-decoration: none;
+}
+
+.notes p {
+	margin-top: 30px;
 }
 
 

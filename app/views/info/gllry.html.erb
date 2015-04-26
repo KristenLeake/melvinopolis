@@ -4,10 +4,18 @@
 
 <div class="container-fluid">
     <div class="row">
-    	<div class="col-xs-12 col-sm-6">
-			<!-- title of project -->
-			<!-- github link -->
-			<!-- description of project -->
+    	<div class="col-xs-12 col-sm-6 notes">
+			<h2>gllry</h2>
+			
+			<span class="title">See the code on </span>
+			<%= link_to "Github", "//github.com/melvinopolis/art-gallery", target: "_blank"%>
+		
+			<p>
+				Gllry was created as a final project for my Tech Talent South class. My partner and I wanted to create a social portfolio site for artists to upload and showcase their work. The home page features thumbnails of recent uploads by category. All content of the site can be viewed without logging in, but users must log in to submit new images and to edit their images. Each user has a profile page where all of their uploads are displayed in a gallery. They can also add links to their social network sites and write a bio of themselves. Until a user uploads their own avatar image, the logo is used as a placeholder avatar.
+			</p>
+			<p>
+				The app is built on Ruby on Rails and uses Twitter Bootstrap's grid features to create a responsive design. We used the devise gem for the user login feature and carrierwave for both the artwork and user avatar image uploads. In the future, we would like to continue adding on to this project with more features such as: the ability to comment on artwork; add friends and favorites; notifications when someone adds you as a friend or favorites your images; and share links for popular social networks like Facebook and Pinterest. 
+			</p>
 		</div>
 
         <div class="col-xs-12 col-sm-6">

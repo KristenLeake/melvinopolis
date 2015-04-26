@@ -11,7 +11,7 @@
             
             <ul class="row image-gallery">
                 <% @costume.photos.each do |picture| %>
-                    <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, alt: picture.caption, class: "img-responsive") %></li>
+                    <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, class: "img-responsive") %></li>
                 <% end %>
             </ul> 
         </div>

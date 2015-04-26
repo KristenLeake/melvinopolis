@@ -10,6 +10,12 @@
 	padding: 10px 0;
 }
 
+.projects img:hover {
+	opacity: .5;
+}
+
 .projects p {
 	text-align: center;
 }
+
+/* Styles for the titles, descriptions, and image galleries are reused from costumepages.css */
