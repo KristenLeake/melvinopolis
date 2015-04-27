@@ -44,7 +44,7 @@
 }
 
 .notes {
-	padding: 3%;
+	padding: 0 3%;
 	font-size: 1.25em;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .notes p {
-	margin-top: 30px;
+	margin: 20px 0;
 }
 
 
