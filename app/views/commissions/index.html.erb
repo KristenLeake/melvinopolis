@@ -1,10 +1,9 @@
-<p id="notice"><%= notice %></p>
-
 <div class="header">
   <h1>Commissions</h1>
 </div>
 
 <div class="container-fluid">
+    <!-- Loop to show Years -->
     <% @years.sort_by{|t| - t.created_at.to_i}.each do |year| %>
         <div class="row year">
           <% if year.commissions.exists? %>
@@ -14,6 +13,7 @@
 
         <div class="container-fluid gallery">
             <div class="row">
+                <!-- Loop to show Commission Thumbnails -->
                 <% year.commissions.sort_by{|t| - t.created_at.to_i}.each do |commission| %>
                     <div class="col-xs-6 col-sm-3 col-lg-2 center-block">
                         <%= link_to image_tag(commission.thumbnail, class: "img-responsive"), commission_path(commission.id) %>

@@ -1,14 +1,26 @@
 <div class="header">
-  <h1>Costumes</h1>
+    <h1>Costumes</h1>
 </div>
+
+<!-- Modal Image Gallery -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">         
+            <div class="modal-body">               
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
+            <!-- Costume Thumbnail -->
             <div class="icon">
                 <%= image_tag(@costume.thumbnail, class: "img-responsive") %>
             </div>
             
+            <!-- Image Thumbnails -->
             <ul class="row image-gallery">
                 <% @costume.photos.each do |picture| %>
                     <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, class: "img-responsive") %></li>
@@ -16,18 +28,11 @@
             </ul> 
         </div>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">         
-                    <div class="modal-body">               
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
         <div class="col-xs-12 col-sm-6 notes">
+            <!-- Character Name -->
             <h2><%= @costume.character %></h2>
 
+            <!-- Costume Variation -->
             <% if @costume.variation.presence %>
                 <p>
                   <span class="title">Variation:</span>
@@ -35,16 +40,16 @@
                 </p>
             <% end %>
 
+            <!-- Series Name -->
             <p>
                <span class="title">Series:</span> 
                <%= @costume.show.series %> 
             </p>
 
-            <!-- <p> -->
-                <!-- <span class="title">Notes:</span>  -->
-                <%= simple_format(@costume.notes) %>
-            <!-- </p> -->
+            <!-- Costume Notes -->
+            <%= simple_format(@costume.notes) %>
 
+            <!-- Awards -->
             <% if @costume.awards.presence %>
                 <p>
                    <span class="title">Awards:</span> 
@@ -52,6 +57,7 @@
                 </p>
             <% end %>
 
+            <!-- Year -->
             <p>
                 <span class="title">Made in:</span> 
                 <%= @costume.year.year %>

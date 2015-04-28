@@ -48,17 +48,17 @@
 	font-size: 1.25em;
 }
 
-.notes .title {
-	font-weight: 700;
-	font-size: .85em;
-}
-
 .notes h2 {
 	font-family: 'Amatic SC', sans-serif;
 	font-size: 2.5em;
 }
 
-.notes a, a:visited {
+.notes .title {
+	font-weight: 700;
+	font-size: .85em;
+}
+
+.notes a, .notes a:visited {
 	color: #ff6f4d;
 	text-decoration: none;
 }
@@ -102,7 +102,7 @@
 	color: #ff6f4d;
 }
 
-.caption {
+/*.caption {
 	text-align: center;
 	font-size: 1.2em;
 	color: #323232;
@@ -111,4 +111,4 @@
 .caption a {
 	text-decoration: none;
 	color: #ff6f4d;
-}
+}*/
