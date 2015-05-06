@@ -1,10 +1,6 @@
+// Bootstrap modal image gallery
+
 $(document).ready(function(){  
-
-    $changeHeight = function(elm){  
-        var documentHeight = $(document).height;    
-        $(elm).css({'min-height': documentHeight});     
-    };
-
 
     $('li img').on('click',function(){
         var src = $(this).attr('src');
@@ -21,16 +17,24 @@ $(document).ready(function(){
 
         // var caption = '';
         // html += '<p class="caption">' + $(this).attr('alt') + '</p>'
-            
+         
+        // Loads modal when image thumbnail is clicked    
         $('#myModal').modal();
         $('#myModal').on('shown.bs.modal', function(){
             $('#myModal .modal-body').html(html);
             // $('#myModal .modal-footer').html(caption);
             $('a.controls').trigger('click');
-
-            $changeHeight('.modal-backdrop.fade.in');
         });
 
+        // Adjusts backdrop height for portrait oriented images. Still a little buggy, but better than before!
+        $('body').on('shown.bs.modal', '.modal', function(){
+            var windowHeight = parseInt($(window).height());
+            var height = parseInt($('.modal-content').height());
+            if(windowHeight > height) height = windowHeight;
+            $('.modal-backdrop').height(height+80);
+        });
+
+        // Hides modal when backdrop is clicked
         $('#myModal').on('hidden.bs.modal', function(){
             $('#myModal .modal-body').html('');
             // $('#myModal .modal-footer').html('');
@@ -38,6 +42,7 @@ $(document).ready(function(){
     });  
 });
 
+// Next & Previous buttons in modal window
 $(document).on('click', 'a.controls', function(){
     var index = $(this).attr('href');
     var src = $('ul.row li:nth-child('+ index +') img').attr('src');    
