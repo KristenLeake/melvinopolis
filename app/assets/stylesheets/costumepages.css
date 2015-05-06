@@ -9,8 +9,7 @@
 }
 
 .gallery img {
-	margin: auto;
-	margin-bottom: 15px;
+	margin: 0 auto 15px;
 	padding: 10px 0;
 }
 
@@ -23,6 +22,11 @@
 }
 
 /* SHOW PAGES */
+
+#warning p {
+	margin: 10px auto;
+	text-align: center;
+}
 
 .icon img {
 	margin: 2% auto 4%;
@@ -37,6 +41,11 @@
 
 .image-gallery li {
 	margin: 1% auto;
+}
+
+.image-gallery li img {
+	max-height: 300px;
+	margin: 0 auto;
 }
 
 .image-gallery img:hover {
@@ -56,6 +65,7 @@
 .notes .title {
 	font-weight: 700;
 	font-size: .85em;
+	margin-right: 5px; 
 }
 
 .notes a, .notes a:visited {
@@ -76,8 +86,7 @@
 /* MODAL */
 
 .modal-body img {
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
 
 .controls {          

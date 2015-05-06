@@ -41,5 +41,12 @@
 	text-align: center;
 	color: #323232;
 	font-size: 1.2em;
-	padding: 15px 10px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.features .bold {
+	margin-top: 15px;
+	font-weight: 700;
+	margin-bottom: 0;
 }

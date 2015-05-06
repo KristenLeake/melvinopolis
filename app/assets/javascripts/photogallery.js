@@ -1,9 +1,9 @@
 $(document).ready(function(){  
 
-    // $changeHeight = function(elm){  
-    //     var documentHeight = $(document).height;    
-    //     $(elm).css({'min-height': documentHeight});     
-    // };
+    $changeHeight = function(elm){  
+        var documentHeight = $(document).height;    
+        $(elm).css({'min-height': documentHeight});     
+    };
 
 
     $('li img').on('click',function(){
@@ -24,10 +24,11 @@ $(document).ready(function(){
             
         $('#myModal').modal();
         $('#myModal').on('shown.bs.modal', function(){
-            // $changeHeight('.modal-backdrop');
             $('#myModal .modal-body').html(html);
             // $('#myModal .modal-footer').html(caption);
             $('a.controls').trigger('click');
+
+            $changeHeight('.modal-backdrop.fade.in');
         });
 
         $('#myModal').on('hidden.bs.modal', function(){
