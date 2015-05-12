@@ -18,11 +18,36 @@
 	list-style: none;
 }
 
-.contact img {
+.contact li {
 	float: right;
 	margin: 5% 2%;
 	clear: right;
 }
+
+.contact h4 {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 2em;
+	text-align: right;
+	margin-right: 100px;
+}
+
+.test {
+	clear: both;
+}
+
+#message {
+	margin-bottom: 20px;
+} 
+
+label {
+	margin-top: 20px;
+}
+
+.email form {
+	width: 90%;
+	margin: 20px auto 0;
+}
+
 
 
 /* SHOPS PAGE */
@@ -56,7 +81,7 @@
 	font-size: 1.15em;
 }
 
-.request a {
+.request a, .email a {
 	color: #ff6f4d;
 	font-family: 'Amatic SC', sans-serif;
 	font-weight: 700;
