@@ -1,5 +1,4 @@
 // Bootstrap modal image gallery
-
 $(document).ready(function(){  
 
     $('li img').on('click',function(){
