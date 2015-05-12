@@ -40,11 +40,13 @@
 }
 
 .image-gallery li {
-	margin: 1% auto;
+	margin: 1.25% auto;
+	height: 0;
+	padding-bottom: 15%;
+	overflow: hidden;
 }
 
 .image-gallery li img {
-	max-height: 300px;
 	margin: 0 auto;
 }
 

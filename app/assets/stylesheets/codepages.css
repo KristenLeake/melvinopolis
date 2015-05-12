@@ -1,4 +1,4 @@
-/*CODE PAGE*/
+/* CODE PAGE */
 
 .projects {
 	margin: 5% 0 15%;
@@ -18,4 +18,27 @@
 	text-align: center;
 }
 
-/* Styles for the titles, descriptions, and image galleries are reused from costumepages.css */
+/* PROJECT PAGES: IMAGE GALLERY */
+/* For styles for the text portions of the page, see costumepages.css (.notes & .title) */
+
+.code-thumbs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.code-thumbs li {
+	margin: 2% auto;
+	height: 0;
+	padding-bottom: 25%;
+	overflow: hidden;
+}
+
+.code-thumbs li img {
+	margin: 0 auto;
+}
+
+.code-thumbs img:hover {
+	opacity: .5;
+}

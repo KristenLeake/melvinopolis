@@ -82,3 +82,33 @@ footer li {
 footer li a:visited {
 	color: #f7fafe;
 }
+
+/* MEDIA QUERIES FOR MOBILE LAYOUT FIXES */
+@media (max-width: 767px) {
+
+	/* MOBILE FOOTER */
+	footer p {
+		font-size: 1em;
+	}
+	footer li {
+		font-size: .8em;
+	}
+
+	/* MOBILE CODE PAGE */
+	.code-thumbs li {
+		padding-bottom: 50%;
+	}
+
+	/* MOBILE COSTUME PAGE */
+	.image-gallery li {
+		padding-bottom: 20%;
+	}
+	.header h1 {
+		margin-bottom: 15px;
+	}
+
+	/* MOBILE SHOPS PAGE */
+	.thumbs {
+		width: 100%;
+	}
+}
