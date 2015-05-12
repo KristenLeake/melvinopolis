@@ -39,6 +39,7 @@ p {
 	height: 30px;
 }
 
+/* HEADER */
 .header {
 	background-image: url("header.jpg");
 	background-repeat: repeat-x;
@@ -52,7 +53,7 @@ p {
 	text-align: right;
 	color: #323232;
 	padding-top: 75px;
-	margin-right: 2%;
+	margin: 0 2% 10px 0;
 }
 
 /* FOOTER */

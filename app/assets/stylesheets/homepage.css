@@ -1,5 +1,4 @@
 /*HOME PAGE*/
-
 .jumbotron {
 	background-image: url("header.jpg"); 
 	padding: 10%;
@@ -9,18 +8,18 @@
 	background-position: center;
 }
 
-.blurb {
+.logo {
 	background-color: #323232;
 	margin-top: -30px;
 }
 
-.blurb h3 {
+.logo h3 {
 	padding: 3%;
 	margin-top: -5px;
 	margin-bottom: -5px;
 }
 
-.blurb img {
+.logo img {
 	margin: auto;
 }
 

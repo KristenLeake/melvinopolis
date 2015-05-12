@@ -4,11 +4,31 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 email">		  		
-		  	<!-- Email form goes here -->
+		<div class="col-xs-12 col-sm-7 email">	
+			<!-- Placeholder form -->
+			<form class="well">
+				<legend><h2>Send an email!</h2></legend>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="user_name" class="form-control">
+			
+				<label for="mail">Email:</label>
+				<input type="email" id="mail" name="user_email" class="form-control">
+
+				<label for="subject">Subject:</label>
+				<select id="subject" name="email_subject" class="form-control">
+					<option value="commissions">Commission Request</option>
+					<option value="development">Web Development</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="user_message" class="form-control"></textarea>
+
+				<button type="submit" class="btn btn-default btn-lg">Send</button>
+			</form>	  		
 		</div>
 
-		<div class="col-xs-12 col-sm-6 contact">
+		<div class="col-xs-12 col-sm-5 contact">
 			<ul id="general-links">
 				<li><%= link_to image_tag("contact/twitter.png", class: "img-responsive"), "//www.twitter.com/melvinopolis", target: "_blank" %></li>
 				<li><%= link_to image_tag("contact/facebook.png", class: "img-responsive"), "//www.facebook.com/melvincosplay", target: "_blank" %></li>

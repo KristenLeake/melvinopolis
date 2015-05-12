@@ -2,7 +2,7 @@
     <h1>Costumes</h1>
 </div>
 
-<!-- Modal Image Gallery -->
+<!-- Bootstrap Modal Image Gallery -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">         
@@ -24,13 +24,19 @@
             </div>
             
             <!-- Image Thumbnails -->
-            <ul class="row image-gallery">
-                <% @costume.photos.each do |picture| %>
-                    <li class="col-xs-6 col-md-4">
-                        <%= image_tag(picture.picture, class: "img-responsive") %>
-                    </li>
-                <% end %>
-            </ul> 
+            <% if @costume.photos.presence %>
+                <ul class="row image-gallery">
+                    <% @costume.photos.each do |picture| %>
+                        <li class="col-xs-6 col-md-4">
+                            <%= image_tag(picture.picture, class: "img-responsive") %>
+                        </li>
+                    <% end %>
+                </ul> 
+            <% else %>
+                <div class="coming-soon">
+                    <h1>Photos coming soon!</h1>
+                </div>
+            <% end %>
         </div>
 
         <div class="col-xs-12 col-sm-6 notes">

@@ -2,6 +2,16 @@
   <h1>Commissions</h1>
 </div>
 
+<!-- Bootstrap Modal Image Gallery -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">         
+            <div class="modal-body">                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
@@ -15,15 +25,6 @@
                 <% end %>
             </ul> 
         </div>
-
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">         
-                    <div class="modal-body">                
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
         <div class="col-xs-12 col-sm-6 notes">
             <h2><%= @commission.character %></h2>

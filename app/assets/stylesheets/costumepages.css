@@ -1,11 +1,11 @@
 /* INDEX PAGES */
-
 .year {
 	margin-left: 30px;
 }
 
 .gallery {
 	width: 100%;
+	padding: 0 10px;
 }
 
 .gallery img {
@@ -19,10 +19,10 @@
 
 .sort {
 	width: 110px;
+	margin-top: 20px;
 }
 
 /* SHOW PAGES */
-
 #warning p {
 	margin: 10px auto;
 	text-align: center;
@@ -84,9 +84,14 @@
 	margin: 20px 0;
 }
 
+/* COMING SOON */
+.coming-soon {
+	text-align: center;
+	margin: 110px 0;
+	width: 100%;
+}
 
 /* MODAL */
-
 .modal-body img {
 	margin: 0 auto;
 }
@@ -103,7 +108,7 @@
     text-align: right;
 }
 
-.next, .previous {
+.next, .previous, .next:visited, .previous:visited {
 	text-decoration: none;
 	color: #323232;
 }

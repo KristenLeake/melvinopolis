@@ -11,13 +11,16 @@
           <% end %>
         </div>
 
-        <div class="container-fluid gallery">
+        <div class="gallery">
             <div class="row">
                 <!-- Loop to show Commission Thumbnails -->
                 <% year.commissions.sort_by{|t| - t.created_at.to_i}.each do |commission| %>
-                    <div class="col-xs-6 col-sm-3 col-lg-2 center-block">
-                        <%= link_to image_tag(commission.thumbnail, class: "img-responsive"), commission_path(commission.id) %>
-                    </div>
+                    <!-- Commissions without thumbnails will be hidden until one is added -->
+                    <% if commission.thumbnail.presence %>
+                        <div class="col-xs-6 col-sm-3 col-lg-2 center-block">
+                            <%= link_to image_tag(commission.thumbnail, class: "img-responsive"), commission_path(commission.id) %>
+                        </div>
+                    <% end %>                    
                 <% end %>
             </div>
         </div>
