@@ -19,11 +19,19 @@
                 <%= image_tag(@commission.thumbnail, class: "img-responsive") %>
             </div>
             
-            <ul class="row image-gallery">
-                <% @commission.photos.each do |picture| %>
-                    <li class="col-xs-6 col-md-4"><%= image_tag(picture.picture, alt: picture.caption, class: "img-responsive") %></li>
-                <% end %>
-            </ul> 
+            <% if @commission.photos.presence %>
+                <ul class="row image-gallery">
+                    <% @commission.photos.each do |picture| %>
+                        <li class="col-xs-6 col-md-4">
+                            <%= image_tag(picture.picture, class: "img-responsive") %>
+                        </li>
+                    <% end %>
+                </ul> 
+            <% else %>
+                <div class="coming-soon">
+                    <h1>Photos coming soon!</h1>
+                </div>
+            <% end %>
         </div>
 
         <div class="col-xs-12 col-sm-6 notes">
@@ -41,8 +49,7 @@
                <%= @commission.show.series %> 
             </p>
 
-            <p>
-                <span class="title">Notes:</span> 
+            <p> 
                 <%= simple_format(@commission.notes) %>
             </p>
 
