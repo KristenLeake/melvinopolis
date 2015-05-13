@@ -71,5 +71,4 @@ class PhotosController < ApplicationController
 	    def photo_params
 	      params.require(:photo).permit(:costume_id, :commission_id, :picture, :caption)
 	    end
-	end
 end
