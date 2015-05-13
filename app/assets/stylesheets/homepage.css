@@ -1,11 +1,11 @@
 /*HOME PAGE*/
 .jumbotron {
 	background-image: url("header.jpg"); 
-	padding: 10%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
+	padding: 10%;
 }
 
 .logo {

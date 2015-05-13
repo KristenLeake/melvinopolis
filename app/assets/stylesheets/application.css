@@ -80,7 +80,7 @@ footer li {
 	float: right;
 }
 
-footer li a:visited {
+footer li a, footer li a:visited {
 	color: #f7fafe;
 }
 
