@@ -112,4 +112,10 @@ footer li a, footer li a:visited {
 	.thumbs {
 		width: 100%;
 	}
+
+	/* MOBILE ABOUT PAGE */
+	.bio {
+		margin-bottom: 0;
+		padding: 20px;
+	}
 }

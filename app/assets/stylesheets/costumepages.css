@@ -79,6 +79,11 @@
 	margin: 20px 0;
 }
 
+.notes p a {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.25em;
+}
+
 /* COMING SOON */
 .coming-soon {
 	text-align: center;

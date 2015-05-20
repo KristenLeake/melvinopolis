@@ -12,31 +12,61 @@
 	margin-bottom: 40px;
 }
 
+.bio p {
+	margin-bottom: 10px;
+}
+
 
 /* CONTACT PAGE*/
 .contact ul {
 	list-style: none;
+	width: 95%;
 }
 
 .contact li {
 	float: right;
 	margin: 5% 2%;
 	clear: right;
+	font-size: 1.15em;
 }
 
-.contact h4 {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 2em;
-	text-align: right;
-	margin-right: 100px;
+.links a {
+	display: block;
+	padding: 20px 100px 0 0;
+	min-height: 62px;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	background-position: right;
 }
 
-.contact img {
-	max-height: 60px;
+.links a, .links a:visited {
+	text-decoration: none;
+	color: #323232;
 }
 
-.test {
-	clear: both;
+.links a:hover {
+	text-decoration: none;
+	color: #ff6f4d;
+}
+
+#twitter a {
+	background-image: url('contact/twitter.png');	
+}
+
+#facebook a {
+	background-image: url('contact/facebook.png');	
+}
+
+#instagram a {
+	background-image: url('contact/instagram.png');	
+}
+
+#github a {
+	background-image: url('contact/github.png');	
+}
+
+#linkedin a {
+	background-image: url('contact/linkedin.png');	
 }
 
 #message {
@@ -58,8 +88,6 @@ label {
 	background-size: 33px;
 	padding: 0 0 0 40px;
 }
-
-
 
 /* SHOPS PAGE */
 .shop {
