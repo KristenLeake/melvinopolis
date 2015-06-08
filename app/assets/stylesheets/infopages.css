@@ -16,6 +16,26 @@
 	margin-bottom: 10px;
 }
 
+.bio h3 {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: 50px;
+}
+
+.con-schedule {
+	list-style-type: circle;
+}
+
+.con-schedule li {
+	padding: 5px 0;
+}
+
+.con-schedule a {
+	text-decoration: none;
+	color: #ff6f4d;
+}
+
 
 /* CONTACT PAGE*/
 .contact ul {
