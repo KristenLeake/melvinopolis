@@ -57,12 +57,18 @@ p {
 }
 
 /* FOOTER */
+.buffer {
+	height: 100px;
+}
+
 footer {
 	background-color: #ff6f4d;
-	position: absolute;
+	/*position: absolute;*/
+	position: fixed;
+	bottom: 0;
 	width: 100%;
 	color: #f7fafe;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 footer p {
@@ -88,6 +94,13 @@ footer li a, footer li a:visited {
 @media (max-width: 767px) {
 
 	/* MOBILE FOOTER */
+	.buffer {
+		display: none;
+	}
+	footer {
+		position: absolute;
+		margin-top: 20px;
+	}
 	footer p {
 		font-size: 1em;
 	}
