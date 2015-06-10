@@ -95,11 +95,12 @@ footer li a, footer li a:visited {
 
 	/* MOBILE FOOTER */
 	.buffer {
-		display: none;
+		height: 0;
 	}
 	footer {
 		position: absolute;
 		margin-top: 20px;
+		bottom: auto;
 	}
 	footer p {
 		font-size: 1em;
