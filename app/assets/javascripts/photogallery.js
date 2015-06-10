@@ -53,27 +53,38 @@ $(document).on('click', 'a.controls', function(){
     var newPrevIndex = parseInt(index) - 1; 
     var newNextIndex = parseInt(newPrevIndex) + 2; 
         
-    if($(this).hasClass('previous')){               
+    if ($(this).hasClass('previous')) {               
         $(this).attr('href', newPrevIndex); 
         $('a.next').attr('href', newNextIndex);
-    }else{
+    } else {
         $(this).attr('href', newNextIndex); 
         $('a.previous').attr('href', newPrevIndex);
     }
         
     var total = $('ul.row li').length + 1; 
     //hide next button
-    if(total === newNextIndex){
+    if (total === newNextIndex) {
         $('a.next').hide();
-    }else{
+    } else {
         $('a.next').show()
     }            
     //hide previous button
-    if(newPrevIndex === 0){
+    if (newPrevIndex === 0) {
         $('a.previous').hide();
-    }else{
+    } else { 
         $('a.previous').show()
     }
         
     return false;
+});
+
+//Use arrow keys to navigate through the gallery
+$(document).keydown(function(e){
+    if (e.keyCode == 37) { //this is left keyboard button
+        $('a.previous').trigger('click') //trigger the left button click
+    }
+
+    if (e.keyCode == 39) { //this is right keboard button
+        $('a.next').trigger('click') //trigger the right button click
+    }
 });
