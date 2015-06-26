@@ -19,4 +19,7 @@ class InfoController < ApplicationController
 
   def gllry
   end
+
+  def podkeeper
+  end
 end
