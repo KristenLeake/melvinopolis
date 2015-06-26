@@ -11,6 +11,7 @@
 .gallery img {
 	margin: 0 auto 15px;
 	padding: 10px 0;
+	max-height: 300px;
 }
 
 .gallery img:hover {
