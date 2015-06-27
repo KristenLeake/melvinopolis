@@ -69,23 +69,23 @@
 }
 
 #twitter a {
-	background-image: url('contact/twitter.png');	
+	background-image: url('contact/twitter.svg');	
 }
 
 #facebook a {
-	background-image: url('contact/facebook.png');	
+	background-image: url('contact/facebook.svg');	
 }
 
 #instagram a {
-	background-image: url('contact/instagram.png');	
+	background-image: url('contact/instagram.svg');	
 }
 
 #github a {
-	background-image: url('contact/github.png');	
+	background-image: url('contact/github.svg');	
 }
 
 #linkedin a {
-	background-image: url('contact/linkedin.png');	
+	background-image: url('contact/linkedin.svg');	
 }
 
 #message {
@@ -102,7 +102,7 @@ label {
 }
 
 .email legend h2 {
-	background-image: url('contact/email.png');
+	background-image: url('contact/email.svg');
 	background-repeat: no-repeat;
 	background-size: 33px;
 	padding: 0 0 0 40px;
