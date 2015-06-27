@@ -1,2 +1,2 @@
 #ignore git folder in heroku slug compiler
-.git
+~/.git/*
