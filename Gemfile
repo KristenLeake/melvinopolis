@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'asset_sync'
 gem 'jquery-turbolinks'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
