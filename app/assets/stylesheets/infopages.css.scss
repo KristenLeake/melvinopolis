@@ -69,23 +69,23 @@
 }
 
 #twitter a {
-	background-image: image-url('contact/twitter.svg');	
+	background-image: asset-data-url("contact/twitter.svg");	
 }
 
 #facebook a {
-	background-image: image-url('contact/facebook.svg');	
+	background-image: asset-data-url("contact/facebook.svg");	
 }
 
 #instagram a {
-	background-image: image-url('contact/instagram.svg');	
+	background-image: asset-data-url("contact/instagram.svg");	
 }
 
 #github a {
-	background-image: image-url('contact/github.svg');	
+	background-image: asset-data-url("contact/github.svg");	
 }
 
 #linkedin a {
-	background-image: image-url('contact/linkedin.svg');	
+	background-image: asset-data-url("contact/linkedin.svg");	
 }
 
 #message {
