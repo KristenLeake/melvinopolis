@@ -24,3 +24,4 @@
 # Ignore application configuration
 /config/application.yml
 /config/asset_sync.yml
+/config/secrets.yml
