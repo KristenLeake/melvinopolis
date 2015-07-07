@@ -4,8 +4,10 @@ if defined?(AssetSync)
     config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
     config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
     # To use AWS reduced redundancy storage.
-    config.aws_reduced_redundancy = true
+    # config.aws_reduced_redundancy = true
     config.fog_directory = 'melvinopolis-assets'
+
+    config.run_on_precompile = true
 
     # Invalidate a file on a cdn after uploading files
     # config.cdn_distribution_id = "12345"
@@ -15,7 +17,7 @@ if defined?(AssetSync)
     # config.fog_region = 'eu-west-1'
     #
     # Do delete files from the store
-    config.existing_remote_files = "keep"
+    config.existing_remote_files = "delete"
     #
     # Automatically replace files with their equivalent gzip compressed version
     # config.gzip_compression = true
