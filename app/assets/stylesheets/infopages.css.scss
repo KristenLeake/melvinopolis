@@ -69,23 +69,23 @@
 }
 
 #twitter a {
-	background-image: asset-data-url("contact/twitter.svg");	
+	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/twitter-1eb6271e50fca471c0aeabef14d84775.svg");	
 }
 
 #facebook a {
-	background-image: asset-data-url("contact/facebook.svg");	
+	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/facebook-1ef09c696bd2b505128583e7ed73b470.svg");	
 }
 
 #instagram a {
-	background-image: asset-data-url("contact/instagram.svg");	
+	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/instagram-3c42be375837b593e5f8ac4033ae156b.svg");	
 }
 
 #github a {
-	background-image: asset-data-url("contact/github.svg");	
+	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/github-54001797463658a1faeeac225e6e09b8.svg");	
 }
 
 #linkedin a {
-	background-image: asset-data-url("contact/linkedin.svg");	
+	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/linkedin-47dc02bb2e185d0f3409b6a175042b9e.svg");	
 }
 
 #message {
@@ -102,7 +102,7 @@ label {
 }
 
 .email legend h2 {
-	background-image: image-url('contact/email.svg');
+	background-image: url('//s3.amazonaws.com/melvinopolis-assets/assets/contact/email-105357bc45740adc3d9cb0d0c6ba7945.svg');
 	background-repeat: no-repeat;
 	background-size: 33px;
 	padding: 0 0 0 40px;

@@ -1,10 +1,11 @@
 /*HOME PAGE*/
 .jumbotron {
-	background-image: url("header.jpg"); 
+	background: url("http://s3.amazonaws.com/melvinopolis-assets/assets/header-8ca051ae8e786e7f520caee6415f93f0.jpg") center/cover repeat-x fixed;
+	/*background-image:  ;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center;*/
 	padding: 10%;
 }
 

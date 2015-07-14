@@ -1,0 +1,114 @@
+/* GENERAL */
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* NAVBAR */
+.navbar li {
+	font-size: 1.15em;
+}
+
+.navbar-brand img {
+	padding-bottom: 10px;
+	height: 30px;
+}
+
+/* HEADER */
+.header {
+	background-image: url("http://s3.amazonaws.com/melvinopolis-assets/assets/header-8ca051ae8e786e7f520caee6415f93f0.jpg"); 
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+.header h1{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 4em;
+	font-weight: 700;
+	text-align: right;
+	color: #323232;
+	padding-top: 75px;
+	margin: 0 2% 10px 0;
+}
+
+/* FOOTER */
+.buffer {
+	height: 100px;
+}
+
+footer {
+	background-color: #ff6f4d;
+	/*position: absolute;*/
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #f7fafe;
+	/*margin-top: 20px;*/
+}
+
+footer p {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.5em;
+	float: left;
+	padding: 2%;
+}
+
+footer li {
+	font-size: 1.15em;
+	display: inline-block;
+	list-style: none;
+	padding: 2%;
+	float: right;
+}
+
+footer li a, footer li a:visited {
+	color: #f7fafe;
+}
+
+/* MEDIA QUERIES FOR MOBILE LAYOUT FIXES */
+@media (max-width: 767px) {
+
+	/* MOBILE FOOTER */
+	.buffer {
+		height: 0;
+	}
+	footer {
+		position: absolute;
+		margin-top: 20px;
+		bottom: auto;
+	}
+	footer p {
+		font-size: 1em;
+	}
+	footer li {
+		font-size: .8em;
+	}
+
+	/* MOBILE CODE PAGE */
+	.code-thumbs li {
+		padding-bottom: 50%;
+	}
+
+	/* MOBILE COSTUME PAGE */
+	.image-gallery li {
+		padding-bottom: 20%;
+	}
+	.header h1 {
+		margin-bottom: 15px;
+	}
+
+	/* MOBILE SHOPS PAGE */
+	.thumbs {
+		width: 100%;
+	}
+
+	/* MOBILE ABOUT PAGE */
+	.bio {
+		margin-bottom: 0;
+		padding: 20px;
+	}
+}
