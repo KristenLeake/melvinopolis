@@ -63,7 +63,7 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = "//melvinopolis-assets.s3.amazonaws.com"
   # config.action_controller.asset_host = "//media%d.melvinopolis.com"
-  config.assets.precompile += %w( application.css.scss codepages.css.scss costumepages.css.scss general.css.scss homepage.css.scss infopages.css.scss )
+  config.assets.precompile += %w( application.css codepages.css costumepages.css general.css homepage.css infopages.css )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
