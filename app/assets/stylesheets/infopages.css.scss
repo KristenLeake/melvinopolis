@@ -69,6 +69,7 @@
 }
 
 #twitter a {
+<<<<<<< HEAD:app/assets/stylesheets/infopages.css.scss
 	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/twitter-1eb6271e50fca471c0aeabef14d84775.svg");	
 }
 
@@ -86,6 +87,25 @@
 
 #linkedin a {
 	background-image: url("//s3.amazonaws.com/melvinopolis-assets/assets/contact/linkedin-47dc02bb2e185d0f3409b6a175042b9e.svg");	
+=======
+	background-image: url('contact/twitter.png');	
+}
+
+#facebook a {
+	background-image: url('contact/facebook.png');	
+}
+
+#instagram a {
+	background-image: url('contact/instagram.png');	
+}
+
+#github a {
+	background-image: url('contact/github.png');	
+}
+
+#linkedin a {
+	background-image: url('contact/linkedin.png');	
+>>>>>>> parent of b69eb2c... Image optimization:app/assets/stylesheets/infopages.css
 }
 
 #message {
@@ -102,7 +122,11 @@ label {
 }
 
 .email legend h2 {
+<<<<<<< HEAD:app/assets/stylesheets/infopages.css.scss
 	background-image: url('//s3.amazonaws.com/melvinopolis-assets/assets/contact/email-105357bc45740adc3d9cb0d0c6ba7945.svg');
+=======
+	background-image: url('contact/email.png');
+>>>>>>> parent of b69eb2c... Image optimization:app/assets/stylesheets/infopages.css
 	background-repeat: no-repeat;
 	background-size: 33px;
 	padding: 0 0 0 40px;
