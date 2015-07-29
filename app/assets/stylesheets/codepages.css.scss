@@ -1,17 +1,17 @@
 /* CODE PAGE */
 
-.projects img {
-	margin: 20px auto 10px;
-	padding: 10px 0;
-	max-height: 250px;
-}
-
-.projects img:hover {
-	opacity: .5;
-}
-
-.projects p {
-	text-align: center;
+.projects {
+	img {
+		margin: 20px auto 10px;
+		padding: 10px 0;
+		max-height: 250px;
+		&:hover {
+			opacity: .5;
+		}
+	}
+	p {
+		text-align: center;
+	}
 }
 
 /* PROJECT PAGES: IMAGE GALLERY */
@@ -22,19 +22,16 @@
 	margin: 0;
 	padding: 0;
 	margin-bottom: 30px;
-}
-
-.code-thumbs li {
-	margin: 2% auto;
-	height: 0;
-	padding-bottom: 25%;
-	overflow: hidden;
-}
-
-.code-thumbs li img {
-	margin: 0 auto;
-}
-
-.code-thumbs img:hover {
-	opacity: .5;
+	li {
+		margin: 2% auto;
+		height: 0;
+		padding-bottom: 25%;
+		overflow: hidden;
+		img {
+			margin: 0 auto;
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
 }

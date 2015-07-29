@@ -1,21 +1,24 @@
+// VARIABLES
+
+
 /* GENERAL */
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-p {
-	margin: 0;
-	padding: 0;
+	p {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 /* NAVBAR */
-.navbar li {
-	font-size: 1.15em;
-}
-
-.navbar-brand img {
-	padding-bottom: 10px;
-	height: 30px;
+.navbar {
+	li {
+		font-size: 1.15em;
+	}
+	.navbar-brand img {
+		padding-bottom: 10px;
+		height: 30px;
+	}
 }
 
 /* HEADER */
@@ -23,16 +26,15 @@ p {
 	background-image: image-url("header.jpg"); 
 	background-repeat: repeat-x;
 	width: 100%;
-}
-
-.header h1{
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 4em;
-	font-weight: 700;
-	text-align: right;
-	color: #323232;
-	padding-top: 75px;
-	margin: 0 2% 10px 0;
+	.header h1{
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 4em;
+		font-weight: 700;
+		text-align: right;
+		color: #323232;
+		padding-top: 75px;
+		margin: 0 2% 10px 0;
+	}
 }
 
 /* FOOTER */
@@ -42,31 +44,26 @@ p {
 
 footer {
 	background-color: #ff6f4d;
-	/*position: absolute;*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	color: #f7fafe;
-	/*margin-top: 20px;*/
-}
-
-footer p {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 1.5em;
-	float: left;
-	padding: 2%;
-}
-
-footer li {
-	font-size: 1.15em;
-	display: inline-block;
-	list-style: none;
-	padding: 2%;
-	float: right;
-}
-
-footer li a, footer li a:visited {
-	color: #f7fafe;
+	p {
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 1.5em;
+		float: left;
+		padding: 2%;
+	}
+	li {
+		font-size: 1.15em;
+		display: inline-block;
+		list-style: none;
+		padding: 2%;
+		float: right;
+		a, a:visited {
+			color: #f7fafe;
+		}
+	}
 }
 
 /* MEDIA QUERIES FOR MOBILE LAYOUT FIXES */
@@ -80,12 +77,12 @@ footer li a, footer li a:visited {
 		position: absolute;
 		margin-top: 20px;
 		bottom: auto;
-	}
-	footer p {
-		font-size: 1em;
-	}
-	footer li {
-		font-size: .8em;
+		p {
+			font-size: 1em;
+		}
+		li {
+			font-size: .8em;
+		}
 	}
 
 	/* MOBILE CODE PAGE */
@@ -94,13 +91,13 @@ footer li a, footer li a:visited {
 	}
 
 	/* MOBILE COSTUME PAGE */
-	.image-gallery li {
-		padding-bottom: 20%;
-	}
 	.header h1 {
 		margin-bottom: 15px;
 	}
-
+	.image-gallery li {
+		padding-bottom: 20%;
+	}
+	
 	/* MOBILE SHOPS PAGE */
 	.thumbs {
 		width: 100%;

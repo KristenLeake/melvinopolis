@@ -1,4 +1,9 @@
 /* INDEX PAGES */
+.sort {
+	width: 110px;
+	margin-top: 20px;
+}
+
 .year {
 	margin-left: 30px;
 }
@@ -6,21 +11,14 @@
 .gallery {
 	width: 100%;
 	padding: 0 10px;
-}
-
-.gallery img {
-	margin: 0 auto 15px;
-	padding: 10px 0;
-	max-height: 300px;
-}
-
-.gallery img:hover {
-	opacity: .5;
-}
-
-.sort {
-	width: 110px;
-	margin-top: 20px;
+	img {
+		margin: 0 auto 15px;
+		padding: 10px 0;
+		max-height: 300px;
+		&:hover {
+			opacity: .5;
+		}
+	}
 }
 
 /* SHOW PAGES */
@@ -33,56 +31,47 @@
 	margin: 0;
 	padding: 0;
 	margin-bottom: 30px;
-}
-
-.image-gallery li {
-	margin: 1.25% auto;
-	height: 0;
-	padding-bottom: 15%;
-	overflow: hidden;
-}
-
-.image-gallery li img {
-	margin: 0 auto;
-}
-
-.image-gallery img:hover {
-	opacity: .5;
+	li {
+		margin: 1.25% auto;
+		height: 0;
+		padding-bottom: 15%;
+		overflow: hidden;
+		img {
+			margin: 0 auto;
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
 }
 
 .notes {
 	padding: 0 3%;
 	font-size: 1.25em;
-}
-
-.notes h2 {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 2.5em;
-}
-
-.notes .title {
-	font-weight: 700;
-	font-size: .85em;
-	margin-right: 5px; 
-}
-
-.notes a, .notes a:visited {
-	color: #ff6f4d;
-	text-decoration: none;
-}
-
-.notes a:hover {
-	color: #323232;
-	text-decoration: none;
-}
-
-.notes p {
-	margin: 20px 0;
-}
-
-.notes p a {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 1.25em;
+	h2 {
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 2.5em;
+	}
+	.title {
+		font-weight: 700;
+		font-size: .85em;
+		margin-right: 5px; 
+	}
+	a, a:visited {
+		color: #ff6f4d;
+		text-decoration: none;
+		&:hover {
+			color: #323232;
+		text-decoration: none;
+		}
+	}
+	p {
+		margin: 20px 0;
+		a {
+			font-family: 'Amatic SC', sans-serif;
+			font-size: 1.25em;
+		}
+	}
 }
 
 /* COMING SOON */
@@ -101,31 +90,27 @@
     display: block;
     font-size: 1.2em;
     padding-top:8px;
-    font-weight: bold;          
-}
-
-.next {
-    float: right;
-    text-align: right;
-}
-
-.next, .previous, .next:visited, .previous:visited {
-	text-decoration: none;
-	color: #323232;
-}
-
-.next:hover, .previous:hover {
-	text-decoration: none;
-	color: #ff6f4d;
+    font-weight: bold;  
+    .next {
+	    float: right;
+	    text-align: right;
+	}  
+	.next, .previous, .next:visited, .previous:visited {
+		text-decoration: none;
+		color: #323232;
+		&:hover {
+			text-decoration: none;
+			color: #ff6f4d;
+		}
+	}      
 }
 
 /*.caption {
 	text-align: center;
 	font-size: 1.2em;
 	color: #323232;
-}
-
-.caption a {
-	text-decoration: none;
-	color: #ff6f4d;
+	a {
+		text-decoration: none;
+		color: #ff6f4d;
+	}
 }*/

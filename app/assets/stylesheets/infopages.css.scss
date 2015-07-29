@@ -9,103 +9,95 @@
 	text-align: left;
 	color: #323232;
 	padding: 40px 40px 0;
-}
-
-.bio p {
-	margin-bottom: 10px;
-}
-
-.bio h3 {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 1.5em;
-	font-weight: 700;
-	margin-top: 50px;
+	p {
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 1.5em;
+		font-weight: 700;
+		margin-top: 50px;
+	}
 }
 
 .con-schedule {
 	list-style-type: circle;
-}
-
-.con-schedule li {
-	padding: 5px 0;
-}
-
-.con-schedule a {
-	text-decoration: none;
-	color: #ff6f4d;
+	li {
+		padding: 5px 0;
+	}
+	a {
+		text-decoration: none;
+		color: #ff6f4d;
+	}
 }
 
 
 /* CONTACT PAGE*/
-.contact ul {
-	list-style: none;
-	width: 95%;
+.contact {
+	// Contact Links
+	ul {
+		list-style: none;
+		width: 95%;
+	}
+	li {
+		float: right;
+		margin: 5% 2%;
+		clear: right;
+		font-size: 1.15em;
+	}
+	.links {
+		display: block;
+		padding: 20px 50px 0 0;
+		min-height: 62px;
+		background-repeat: no-repeat;
+		background-size: 60px;
+		background-position: right;
+		a, a:visited {
+			text-decoration: none;
+			color: #323232;
+			&:hover {
+				text-decoration: none;
+				color: #ff6f4d;
+			}
+		}
+	}
+	// Contact Link Icons
+	#twitter {
+		background-image: image-url('contact/twitter.png');	
+	}
+	#facebook {
+		background-image: image-url('contact/facebook.png');	
+	}
+	#instagram {
+		background-image: image-url('contact/instagram.png');	
+	}
+	#github {
+		background-image: image-url('contact/github.png');	
+	}
+	#linkedin {
+		background-image: image-url('contact/linkedin.png');
+	}	
 }
 
-.contact li {
-	float: right;
-	margin: 5% 2%;
-	clear: right;
-	font-size: 1.15em;
-}
-
-.links a {
-	display: block;
-	padding: 20px 100px 0 0;
-	min-height: 62px;
-	background-repeat: no-repeat;
-	background-size: 60px;
-	background-position: right;
-}
-
-.links a, .links a:visited {
-	text-decoration: none;
-	color: #323232;
-}
-
-.links a:hover {
-	text-decoration: none;
-	color: #ff6f4d;
-}
-
-#twitter a {
-	background-image: image-url("twitter.svg");	
-}
-
-#facebook a {
-	background-image: image-url("facebook.svg");	
-}
-
-#instagram a {
-	background-image: image-url("instagram.svg");	
-}
-
-#github a {
-	background-image: image-url("github.svg");	
-}
-
-#linkedin a {
-	background-image: image-url("linkedin.svg");
-}	
-
-#message {
-	margin-bottom: 20px;
-} 
-
-label {
-	margin-top: 20px;
-}
-
-.email form {
-	width: 90%;
-	margin: 20px auto 0;
-}
-
-.email legend h2 {
-	background-image: image-url('email.svg');
-	background-repeat: no-repeat;
-	background-size: 33px;
-	padding: 0 0 0 40px;
+// Contact Form Elements
+.email {
+	form {
+		width: 90%;
+		margin: 20px auto 0;
+	}
+	#email {
+		height: 60px;
+		padding: 0 0 10px 0;
+	}
+	legend h2 {
+		display: inline-block;
+	}
+	label {
+		margin-top: 20px;
+	}
+	#message {
+		margin-bottom: 20px;
+	} 
 }
 
 /* SHOPS PAGE */
@@ -113,35 +105,29 @@ label {
 	width: 100%;
 	padding: 2%;
 	margin-bottom: 30px;
-}
-
-.shop img {
-	margin: 2% auto;
-}
-
-.thumbs {
-	width: 75%;
-	margin: 0 auto;
-
-}
-
-.thumbs img {
-	margin: auto;
+	img {
+		margin: 2% auto;
+	}
+	.thumbs {
+		width: 75%;
+		margin: 0 auto;
+		img {
+			margin: auto;
+		}
+	}
 }
 
 .request {
 	width: 85%;
 	text-align: center;
 	margin: 3% auto 30px;
-}
-
-.request p {
-	font-size: 1.15em;
-}
-
-.request a, .email a {
-	color: #ff6f4d;
-	font-family: 'Amatic SC', sans-serif;
-	font-weight: 700;
-	font-size: 1.25em;
+	p {
+		font-size: 1.15em;
+	}
+	a, .email a {
+		color: #ff6f4d;
+		font-family: 'Amatic SC', sans-serif;
+		font-weight: 700;
+		font-size: 1.25em;
+	}
 }
