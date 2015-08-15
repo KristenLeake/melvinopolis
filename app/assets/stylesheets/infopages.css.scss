@@ -7,13 +7,13 @@
 .bio {
 	font-size: 1.2em;
 	text-align: left;
-	color: #323232;
+	color: $mainColor;
 	padding: 40px 40px 0;
 	p {
 		margin-bottom: 10px;
 	}
 	h3 {
-		font-family: 'Amatic SC', sans-serif;
+		font-family: $accentFont;
 		font-size: 1.5em;
 		font-weight: 700;
 		margin-top: 50px;
@@ -27,7 +27,7 @@
 	}
 	a {
 		text-decoration: none;
-		color: #ff6f4d;
+		color: $accentColor;
 	}
 }
 
@@ -54,10 +54,10 @@
 		background-position: right;
 		a, a:visited {
 			text-decoration: none;
-			color: #323232;
+			color: $mainColor;
 			&:hover {
 				text-decoration: none;
-				color: #ff6f4d;
+				color: $accentColor;
 			}
 		}
 	}
@@ -125,8 +125,8 @@
 		font-size: 1.15em;
 	}
 	a, .email a {
-		color: #ff6f4d;
-		font-family: 'Amatic SC', sans-serif;
+		color: $accentColor;
+		font-family: $accentFont;
 		font-weight: 700;
 		font-size: 1.25em;
 	}

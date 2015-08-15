@@ -1,9 +1,14 @@
 // VARIABLES
-
+$accentColor: #ff6f4d;
+$mainColor: #323232;
+$lightColor: #f7fafe;
+$mainFont: 'Open Sans Condensed', sans-serif;
+$accentFont: 'Amatic SC', sans-serif;
+$hover: .5;
 
 /* GENERAL */
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: $mainFont;
 	p {
 		margin: 0;
 		padding: 0;
@@ -27,11 +32,11 @@ body {
 	background-repeat: repeat-x;
 	width: 100%;
 	.header h1{
-		font-family: 'Amatic SC', sans-serif;
+		font-family: $accentFont;
 		font-size: 4em;
 		font-weight: 700;
 		text-align: right;
-		color: #323232;
+		color: $mainColor;
 		padding-top: 75px;
 		margin: 0 2% 10px 0;
 	}
@@ -43,11 +48,11 @@ body {
 }
 
 footer {
-	background-color: #ff6f4d;
+	background-color: $accentColor;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	color: #f7fafe;
+	color: $lightColor;
 	p {
 		font-family: 'Amatic SC', sans-serif;
 		font-size: 1.5em;
@@ -61,7 +66,7 @@ footer {
 		padding: 2%;
 		float: right;
 		a, a:visited {
-			color: #f7fafe;
+			color: $lightColor;
 		}
 	}
 }

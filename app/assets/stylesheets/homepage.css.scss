@@ -9,7 +9,7 @@
 }
 
 .logo {
-	background-color: #323232;
+	background-color: $mainColor;
 	margin-top: -30px;
 	h3 {
 		padding: 3%;
@@ -30,10 +30,13 @@
 		position: center;
 		margin: auto;
 		border-radius: 50%;
+		&:hover {
+			opacity: $hover;
+		}
 	}
 	p {
 		text-align: center;
-		color: #323232;
+		color: $mainColor;
 		font-size: 1.2em;
 		padding-bottom: 10px;
 		margin-bottom: 15px;

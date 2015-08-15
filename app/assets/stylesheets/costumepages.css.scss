@@ -16,7 +16,7 @@
 		padding: 10px 0;
 		max-height: 300px;
 		&:hover {
-			opacity: .5;
+			opacity: $hover;
 		}
 	}
 }
@@ -39,7 +39,7 @@
 		img {
 			margin: 0 auto;
 			&:hover {
-				opacity: .5;
+				opacity: $hover;
 			}
 		}
 	}
@@ -49,7 +49,7 @@
 	padding: 0 3%;
 	font-size: 1.25em;
 	h2 {
-		font-family: 'Amatic SC', sans-serif;
+		font-family: $accentFont;
 		font-size: 2.5em;
 	}
 	.title {
@@ -58,17 +58,17 @@
 		margin-right: 5px; 
 	}
 	a, a:visited {
-		color: #ff6f4d;
+		color: $accentColor;
 		text-decoration: none;
 		&:hover {
-			color: #323232;
+			color: $mainColor;
 		text-decoration: none;
 		}
 	}
 	p {
 		margin: 20px 0;
 		a {
-			font-family: 'Amatic SC', sans-serif;
+			font-family: $accentFont;
 			font-size: 1.25em;
 		}
 	}
@@ -97,10 +97,10 @@
 	}  
 	.next, .previous, .next:visited, .previous:visited {
 		text-decoration: none;
-		color: #323232;
+		color: $mainColor;
 		&:hover {
 			text-decoration: none;
-			color: #ff6f4d;
+			color: $accentColor;
 		}
 	}      
 }
@@ -108,9 +108,9 @@
 /*.caption {
 	text-align: center;
 	font-size: 1.2em;
-	color: #323232;
+	color: $mainColor;
 	a {
 		text-decoration: none;
-		color: #ff6f4d;
+		color: $accentColor;
 	}
 }*/
