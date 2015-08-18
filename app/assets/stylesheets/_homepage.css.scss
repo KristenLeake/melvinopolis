@@ -1,0 +1,46 @@
+/*HOME PAGE*/
+.jumbotron {
+	background: image-url("header.jpg") center repeat-x fixed;
+	background-size: cover;
+	padding: 10%;
+}
+
+.logo {
+	background-color: $mainColor;
+	margin-top: -30px;
+	h3 {
+		padding: 3%;
+		margin-top: -5px;
+		margin-bottom: -5px;
+	}
+	img {
+		margin: auto;
+	}
+}
+
+.features {
+	padding: 2% 0;
+	margin-top: 1%;
+	width: 100%;
+	img {
+		width: 300px;
+		position: center;
+		margin: auto;
+		border-radius: 50%;
+		&:hover {
+			opacity: $hover;
+		}
+	}
+	p {
+		text-align: center;
+		color: $mainColor;
+		font-size: 1.2em;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	.bold {
+		margin-top: 15px;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+}

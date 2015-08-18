@@ -1,0 +1,108 @@
+/* GENERAL */
+body {
+	font-family: $mainFont;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* NAVBAR */
+.navbar {
+	li {
+		font-size: 1.15em;
+	}
+	.navbar-brand img {
+		padding-bottom: 10px;
+		height: 30px;
+	}
+}
+
+/* HEADER */
+.header {
+	background-image: image-url("header.jpg");
+	background-repeat: repeat-x; 
+	width: 100%;
+	h1{
+		font-family: $accentFont;
+		font-size: 4em;
+		font-weight: 700;
+		text-align: right;
+		color: $mainColor;
+		padding-top: 75px;
+		margin: 0 2% 10px 0;
+	}
+}
+
+/* FOOTER */
+.buffer {
+	height: 100px;
+}
+
+footer {
+	background-color: $accentColor;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: $lightColor;
+	p {
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 1.5em;
+		float: left;
+		padding: 2%;
+	}
+	li {
+		font-size: 1.15em;
+		display: inline-block;
+		list-style: none;
+		padding: 2%;
+		float: right;
+		a, a:visited {
+			color: $lightColor;
+		}
+	}
+}
+
+/* MEDIA QUERIES FOR MOBILE LAYOUT FIXES */
+@media (max-width: 767px) {
+
+	/* MOBILE FOOTER */
+	.buffer {
+		height: 0;
+	}
+	footer {
+		position: absolute;
+		margin-top: 20px;
+		bottom: auto;
+		p {
+			font-size: 1em;
+		}
+		li {
+			font-size: .8em;
+		}
+	}
+
+	/* MOBILE CODE PAGE */
+	.code-thumbs li {
+		padding-bottom: 50%;
+	}
+
+	/* MOBILE COSTUME PAGE */
+	.header h1 {
+		margin-bottom: 15px;
+	}
+	.image-gallery li {
+		padding-bottom: 20%;
+	}
+	
+	/* MOBILE SHOPS PAGE */
+	.thumbs {
+		width: 100%;
+	}
+
+	/* MOBILE ABOUT PAGE */
+	.bio {
+		margin-bottom: 0;
+		padding: 20px;
+	}
+}

@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :photos
+  root "info#home"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root "info#home"
+
+  resources :photos
 
   resources :commissions
 
@@ -22,15 +23,15 @@ Rails.application.routes.draw do
 
   get '/contact' => 'info#contact'
 
-  get '/webdev' => 'info#code'
+  get '/code' => 'info#code'
 
   get '/shops' => 'info#shops'
 
-  get '/webdev/melvinopolis' => 'info#melvinopolis'
+  get '/code/melvinopolis' => 'info#melvinopolis'
 
-  get '/webdev/gllry' => 'info#gllry'
+  get '/code/gllry' => 'info#gllry'
 
-  get '/webdev/podkeeper' => 'info#podkeeper'
+  get '/code/podkeeper' => 'info#podkeeper'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

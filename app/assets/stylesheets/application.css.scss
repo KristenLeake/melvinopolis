@@ -10,6 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+// VARIABLES
+$accentColor: #ff6f4d;
+$mainColor: #323232;
+$lightColor: #f7fafe;
+$mainFont: 'Open Sans Condensed', sans-serif;
+$accentFont: 'Amatic SC', sans-serif;
+$hover: .5;
+
+@import 
+ 		"general",
+ 		"homepage",
+ 		"infopages",
+ 		"codepages",
+ 		"costumepages",
+ 		"spoonflower";
