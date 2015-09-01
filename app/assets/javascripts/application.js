@@ -15,3 +15,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	$('.email form input[placeholder], .email form textarea[placeholder]').on('focus', function () {
+	    var $this = $(this);
+	    $this.data('placeholder', $this.prop('placeholder')).removeAttr('placeholder');
+	}).on('blur', function () {
+	    var $this = $(this);
+	    $this.prop('placeholder', $this.data('placeholder'));
+	});
+});

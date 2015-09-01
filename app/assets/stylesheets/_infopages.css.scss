@@ -47,7 +47,7 @@
 	}
 	.links {
 		display: block;
-		padding: 20px 50px 0 0;
+		padding: 20px 100px 0 0;
 		min-height: 62px;
 		background-repeat: no-repeat;
 		background-size: 60px;
@@ -80,24 +80,43 @@
 }
 
 // Contact Form Elements
+.well {
+	border-radius: 0;
+}
 .email {
 	form {
 		width: 90%;
 		margin: 20px auto 0;
+		legend {
+			h2 {
+				display: inline-block;
+			}
+			#email {
+				height: 60px;
+				padding: 0 10px 10px 0;
+			}
+		}
+		label {
+			// display: none;
+			margin-top: 20px;
+			font-weight: lighter;
+		}
+		#message {
+			margin-bottom: 20px;
+		} 
+		input, textarea {
+			background: transparent;
+			border-radius: 0;
+			box-shadow: none;
+			border: none;
+			border-bottom: 1px solid $mainColor;
+			&:focus {
+				border: none;
+				box-shadow: none;
+				border-bottom: 2px solid $accentColor;
+			}
+		}
 	}
-	#email {
-		height: 60px;
-		padding: 0 0 10px 0;
-	}
-	legend h2 {
-		display: inline-block;
-	}
-	label {
-		margin-top: 20px;
-	}
-	#message {
-		margin-bottom: 20px;
-	} 
 }
 
 /* SHOPS PAGE */
@@ -124,10 +143,11 @@
 	p {
 		font-size: 1.15em;
 	}
-	a, .email a {
+}
+
+.request a, .email a {
 		color: $accentColor;
 		font-family: $accentFont;
 		font-weight: 700;
 		font-size: 1.25em;
 	}
-}
