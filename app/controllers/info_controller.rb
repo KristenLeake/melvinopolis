@@ -8,18 +8,9 @@ class InfoController < ApplicationController
   def contact
   end
 
-  def code
-  end
-
   def shops
   end
 
-  def melvinopolis
-  end
-
-  def gllry
-  end
-
-  def podkeeper
+  def resume
   end
 end

@@ -11,8 +11,8 @@
     <%= stylesheet_link_tag "//fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300,700" %>
   	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   	<%= csrf_meta_tags %>
-
-     <!-- javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"  -->
+    
+    <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" %>
     <%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </head>
@@ -28,7 +28,7 @@
 	                <span class='icon-bar'></span>
 	            </button>
 	            <div class='navbar-brand'>
-	                <%= link_to image_tag('m-logo.png'), root_path %>
+	                <%= link_to image_tag('new-m-logo.png'), root_path %>
 	            </div>
 	        </div>
 
@@ -60,7 +60,7 @@
 	            <li><%= link_to 'about', about_path %></li>
                 <li><%= link_to 'contact', contact_path %></li>
 	            <li><%= link_to 'shops', shops_path %></li>
-                <li><%= link_to 'resume', '/resume.pdf', target: "_blank" %></li>
+                <li><%= link_to 'resume', resume_path %></li>
 	        </ul>
 	</footer>
 
