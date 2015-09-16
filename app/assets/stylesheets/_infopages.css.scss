@@ -26,6 +26,8 @@
 		padding: 5px 0;
 	}
 	a {
+		font-family: $scriptFont;
+		font-size: 1.5em;
 		text-decoration: none;
 		color: $accentColor;
 	}
@@ -123,11 +125,28 @@
 	margin: 3% auto 30px;
 	p {
 		font-size: 1.15em;
+		strong {
+			font-family: $scriptFont;
+			font-size: 1.6em;
+		}
 	}
 	a, .email a {
 		color: $accentColor;
 		font-family: $accentFont;
 		font-weight: 700;
 		font-size: 1.25em;
+	}
+}
+
+/* RESUME PAGE */
+.resume {
+	h1, h2 {
+		font-family: $scriptFont;
+	}
+	h1 {
+		font-size: 6em;
+	}
+	h2 {
+		font-size: 4em;
 	}
 }

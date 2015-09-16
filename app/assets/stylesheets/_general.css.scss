@@ -1,6 +1,7 @@
 /* GENERAL */
 body {
 	font-family: $mainFont;
+	color: $mainColor;
 	p {
 		margin: 0;
 		padding: 0;
@@ -28,7 +29,6 @@ body {
 		font-size: 4em;
 		font-weight: 700;
 		text-align: right;
-		color: $mainColor;
 		padding-top: 75px;
 		margin: 0 2% 10px 0;
 	}
