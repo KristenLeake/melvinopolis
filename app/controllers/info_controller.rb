@@ -1,5 +1,8 @@
 class InfoController < ApplicationController
   def home
+    @costumes = Costume.all
+    @commissions = Commission.all
+    @shows = Show.all
   end
 
   def about
@@ -8,18 +11,9 @@ class InfoController < ApplicationController
   def contact
   end
 
-  def code
-  end
-
   def shops
   end
 
-  def melvinopolis
-  end
-
-  def gllry
-  end
-
-  def podkeeper
+  def resume
   end
 end

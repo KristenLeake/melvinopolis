@@ -12,9 +12,19 @@
 		padding: 3%;
 		margin-top: -5px;
 		margin-bottom: -5px;
+		font-family: $accentFont;
+		color: $lightColor;
+		font-size: 4em;
 	}
 	img {
 		margin: auto;
+	}
+	&.sub-section {
+		width: 80%;
+		margin: 0 auto;
+		h3 {
+			padding: 2% 4%;
+		}
 	}
 }
 
@@ -39,8 +49,14 @@
 		margin-bottom: 15px;
 	}
 	.bold {
+		font-family: $scriptFont;
+		text-transform: lowercase;
+		font-size: 2.5em;
 		margin-top: 15px;
-		font-weight: 700;
 		margin-bottom: 0;
+	}
+	&.recent img {
+		width: 200px;
+		border-radius: 0;
 	}
 }

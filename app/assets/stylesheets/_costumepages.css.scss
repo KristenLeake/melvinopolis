@@ -1,4 +1,4 @@
-/* INDEX PAGES */
+ // INDEX PAGES 
 .sort {
 	width: 110px;
 	margin-top: 20px;
@@ -21,7 +21,7 @@
 	}
 }
 
-/* SHOW PAGES */
+// SHOW PAGES 
 .icon img {
 	margin: 2% auto 4%;
 }
@@ -53,35 +53,35 @@
 		font-size: 2.5em;
 	}
 	.title {
+		font-family: $scriptFont;
+		text-transform: lowercase;
 		font-weight: 700;
-		font-size: .85em;
+		font-size: 1.75em;
 		margin-right: 5px; 
 	}
 	a, a:visited {
 		color: $accentColor;
 		text-decoration: none;
+		font-family: $accentFont;
+		font-size: 1.3em;
 		&:hover {
 			color: $mainColor;
-		text-decoration: none;
+			text-decoration: none;
 		}
 	}
 	p {
 		margin: 20px 0;
-		a {
-			font-family: $accentFont;
-			font-size: 1.25em;
-		}
 	}
 }
 
-/* COMING SOON */
+// COMING SOON
 .coming-soon {
 	text-align: center;
 	margin: 110px 0;
 	width: 100%;
 }
 
-/* MODAL */
+// MODAL 
 .modal-body img {
 	margin: 0 auto;
 }
@@ -105,12 +105,12 @@
 	}      
 }
 
-/*.caption {
-	text-align: center;
-	font-size: 1.2em;
-	color: $mainColor;
-	a {
-		text-decoration: none;
-		color: $accentColor;
-	}
-}*/
+//.caption {
+// 	text-align: center;
+// 	font-size: 1.2em;
+// 	color: $mainColor;
+// 	a {
+// 		text-decoration: none;
+// 		color: $accentColor;
+// 	}
+// }

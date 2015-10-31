@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-
   root "info#home"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -14,12 +12,10 @@ Rails.application.routes.draw do
   resources :years
 
   get '/home' => 'info#home'
-
   get '/about' => 'info#about'
-
   get '/contact' => 'info#contact'
-
   get '/shops' => 'info#shops'
+  get '/resume' => 'info#resume'
 
   get '/code' => 'code#code'
   get '/code/melvinopolis' => 'code#melvinopolis'

@@ -20,5 +20,37 @@
             <%= link_to image_tag("commissions.jpg", class: "img-responsive"), commissions_path %>
             <p class="bold">Commissions!</p><p>Costumes made for others.</p>
         </div>
-    </div>  
+    </div> 
+    
+    <div class="logo sub-section">
+        <h3>recently updated</h3>
+    </div> 
+
+    <div class="row features recent">
+        <div class="col-xs-12 col-sm-4 center-block">
+            <%= link_to image_tag('code/tts.jpg', class: "img-responsive"), code_tts_path %>
+            <p class="bold">Tech Talent South</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 center-block">
+
+            <!-- psuedo code:
+                if picture updated at > costume updated at, post picture's costume
+                else costume updated at > picture updated at, post costume
+             -->
+            <% @costumes.sort_by{|t| - t.updated_at.to_i}.first(1).each do |costume| %>
+                <%= link_to image_tag(costume.thumbnail, class: "img-responsive"), costume_path(costume.id) %>
+                <p class="bold"><%= costume.character %> 
+                <% if costume.show.presence %>
+                    | <%= costume.show.series %>
+                <% end %></p>
+            <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-4 center-block">
+            <% @commissions.sort_by{|t| - t.updated_at.to_i}.first(1).each do |commission| %>
+                <%= link_to image_tag(commission.thumbnail, class: "img-responsive"), commission_path(commission.id) %>
+                <p class="bold"><%= commission.character %> | <%= commission.show.series %></p>
+            <% end %>
+        </div>
+    </div>
 </div>
+

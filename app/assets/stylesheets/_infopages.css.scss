@@ -26,6 +26,8 @@
 		padding: 5px 0;
 	}
 	a {
+		font-family: $scriptFont;
+		font-size: 1.5em;
 		text-decoration: none;
 		color: $accentColor;
 	}
@@ -142,6 +144,10 @@
 	margin: 3% auto 30px;
 	p {
 		font-size: 1.15em;
+		strong {
+			font-family: $scriptFont;
+			font-size: 1.6em;
+		}
 	}
 }
 
@@ -151,3 +157,4 @@
 		font-weight: 700;
 		font-size: 1.25em;
 	}
+}
