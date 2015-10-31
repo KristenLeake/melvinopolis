@@ -21,12 +21,15 @@
 				<input type="email" id="mail" name="user_email" class="form-control" placeholder="Email">
 
 				<label for="subject"></label>
-				<select id="subject" name="email_subject" class="form-control">
-					<option value="" disabled selected>Choose a subject</option>
-					<option value="commissions">Commission Request</option>
-					<option value="development">Web Development</option>
-					<option value="other">Other</option>
-				</select>
+				<div class="select">
+					<select id="subject" name="email_subject" class="form-control">
+						<option value="" disabled selected>Choose a subject</option>
+						<option value="commissions">Commission Request</option>
+						<option value="development">Web Development</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				
 
 				<label for="message"></label>
 				<textarea id="message" name="user_message" class="form-control" placeholder="Message"></textarea>

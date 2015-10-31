@@ -45,11 +45,12 @@
 		float: right;
 		margin: 5% 2%;
 		clear: right;
-		font-size: 1.15em;
+		font-family: $scriptFont;
+		font-size: 2em;
 	}
 	.links {
 		display: block;
-		padding: 20px 100px 0 0;
+		padding: 15px 100px 0 0;
 		min-height: 62px;
 		background-repeat: no-repeat;
 		background-size: 60px;
@@ -99,7 +100,6 @@
 			}
 		}
 		label {
-			// display: none;
 			margin-top: 20px;
 			font-weight: lighter;
 		}
@@ -118,6 +118,16 @@
 				border-bottom: 2px solid $accentColor;
 			}
 		}
+		.select {
+			select.form-control {
+				background: transparent;
+				border: none;
+				box-shadow: none;
+				border-radius: 0;
+			}
+			border-bottom: 1px solid $mainColor;
+		}
+		
 	}
 }
 
@@ -152,9 +162,8 @@
 }
 
 .request a, .email a {
-		color: $accentColor;
-		font-family: $accentFont;
-		font-weight: 700;
-		font-size: 1.25em;
-	}
+	color: $accentColor;
+	font-family: $accentFont;
+	font-weight: 700;
+	font-size: 1.25em;
 }
