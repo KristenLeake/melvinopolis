@@ -1,0 +1,20 @@
+// fonts
+@font-face {
+    font-family: 'Jenna Sue';
+    src: url(font-path('jennasue-webfont.eot') + "?#iefix") format('embedded-opentype'),
+         url(font-path('jennasue-webfont.woff')) format('woff'), 
+         url(font-path('jennasue-webfont.ttf'))  format('truetype'),
+         url(font-path('jennasue-webfont.svg') + "#JennaSue") format('svg');
+}
+
+$mainFont: 'Open Sans Condensed', sans-serif;
+$accentFont: 'Amatic SC', sans-serif;
+$scriptFont: 'Jenna Sue', sans-serif;
+
+// colors
+$accentColor: #ff6f4d;
+$mainColor: #323232;
+$lightColor: #f7fafe;
+
+// misc
+$hover: .5;
