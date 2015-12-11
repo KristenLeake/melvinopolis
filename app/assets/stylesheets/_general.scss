@@ -24,8 +24,10 @@ body {
 
 /* HEADER */
 .header {
-	background-image: image-url("header.jpg");
+	background-image: image-url("header.svg");
 	background-repeat: repeat-x; 
+	background-size: 40%;
+	background-position: center;
 	width: 100%;
 	h1{
 		font-family: $accentFont;
