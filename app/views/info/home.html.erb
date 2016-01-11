@@ -4,34 +4,40 @@
     <h3><%= image_tag "title2.png", class: "img-responsive" %></h3>
 </div>
 
-<div class="container-fluid">
-    <div class="row features">
-        <div class="col-xs-12 col-sm-4 center-block">
-            <%= link_to image_tag("code.jpg", class: "img-responsive"), code_path %>
-            <p class="bold">Code!</p><p>Web development &amp; design projects.</p>   
-        </div>
-                
-        <div class="col-xs-12 col-sm-4 center-block">
-            <%= link_to image_tag("costumes.jpg", class: "img-responsive"), costumes_path %>
-            <p class="bold">Costumes!</p><p>Costumes made for myself.</p>
-        </div>
-        
-        <div class="col-xs-12 col-sm-4 center-block">
-            <%= link_to image_tag("commissions.jpg", class: "img-responsive"), commissions_path %>
-            <p class="bold">Commissions!</p><p>Costumes made for others.</p>
-        </div>
-    </div> 
+
+<div class="features">
     
+        <%= link_to code_path, {class: "code feature"} do  %>
+            <%= image_tag 'code-test.jpg' %>
+            <p class="bold">Code</p>
+            <!-- <p>Web development &amp; design projects.</p>    -->
+        <% end %>
+        
+        <%= link_to costumes_path, {class: "costumes feature"} do  %>
+            <%= image_tag 'costumes-test.jpg' %>
+            <p class="bold">Costumes</p>
+            <!-- <p>Costumes made for myself.</p> -->
+        <% end %>
+    
+    
+        <%= link_to commissions_path, {class: "commissions feature"} do  %>
+            <%= image_tag 'commissions-test.jpg' %>
+            <p class="bold">Commissions</p>
+            <!-- <p>Costumes made for others.</p> -->
+        <% end %>
+</div> 
+
+<div class="container-fluid home">    
     <div class="logo sub-section">
         <h3>recently updated</h3>
     </div> 
 
-    <div class="row features recent">
+    <div class="recent">
         <div class="col-xs-12 col-sm-4 center-block">
             <%= link_to image_tag('code/tts.jpg', class: "img-responsive"), code_tts_path %>
             <p class="bold">Tech Talent South</p>
         </div>
-        <div class="col-xs-12 col-sm-4 center-block">
+        <div class="col-xs-6 col-sm-4 center-block">
 
             <!-- psuedo code:
                 if picture updated at > costume updated at, post picture's costume
@@ -45,7 +51,7 @@
                 <% end %></p>
             <% end %>
         </div>
-        <div class="col-xs-12 col-sm-4 center-block">
+        <div class="col-xs-6 col-sm-4 center-block">
             <% @commissions.sort_by{|t| - t.updated_at.to_i}.first(1).each do |commission| %>
                 <%= link_to image_tag(commission.thumbnail, class: "img-responsive"), commission_path(commission.id) %>
                 <p class="bold"><%= commission.character %> | <%= commission.show.series %></p>
