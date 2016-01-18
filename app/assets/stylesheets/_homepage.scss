@@ -100,7 +100,6 @@
 	}
 	
 	a.feature {
-		// max-width: 500px;
 		max-height: 300px;
 		overflow: hidden;
 		align-self: center;
@@ -119,13 +118,6 @@
 		img {
 			width: 100%;
 			margin: 0 auto;
-			// clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-			// -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-			@media screen and (min-width: 400px) {
-				// width: 400px;
-				
-			}
 			@media screen and (min-width: 768px) {
 				width: 275px;
 				clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -156,12 +148,7 @@
 		border-radius: 0;
 		margin: auto;
 	}
-
 }
-
-// * {
-// 	border: 1px solid black;
-// }
 
 
 
