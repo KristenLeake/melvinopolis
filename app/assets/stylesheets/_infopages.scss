@@ -86,7 +86,11 @@
 .well {
 	border-radius: 0;
 }
-.email {
+
+.email-form {
+	display: none;
+}
+.email-form, .commission-form {
 	form {
 		width: 90%;
 		margin: 20px auto 0;

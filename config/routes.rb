@@ -25,6 +25,9 @@ Rails.application.routes.draw do
   get '/code/women-wine-design' => 'code#www'
   get '/code/lechegaray' => 'code#luis'
   get '/code/gishwhes2015' => 'code#gishwhes'
+  get '/code/cards' => 'code#cards'
+  get '/code/la-patrona' => 'code#lapatrona'
+  get '/code/night-shift' => 'code#nightshift'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

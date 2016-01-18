@@ -22,5 +22,14 @@ class CodeController < ApplicationController
 
 	def luis
 	end
+
+	def cards
+	end
+
+	def lapatrona
+	end
+
+	def nightshift
+	end
 	
 end

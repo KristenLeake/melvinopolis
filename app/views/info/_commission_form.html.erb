@@ -1,0 +1,45 @@
+<!-- Placeholder form -->
+<form class="well">
+	<legend>
+		<%= image_tag('contact/scissors.png', id: "email") %><h2>Send a commission request!</h2>
+	</legend>
+	
+	<p>This form is just a sample and will be functional in the future. For now, please send your emails to <%= link_to "melvinopolis@gmail.com", "mailto:melvinopolis@gmail.com"%>. Thank you!</p>
+	<hr>
+
+	<label for="name"></label>
+	<input type="text" id="name" name="user_name" class="form-control" placeholder="First and last name">
+
+	<label for="mail"></label>
+	<input type="email" id="mail" name="user_email" class="form-control" placeholder="Email">
+
+	<label for="website"></label>
+	<input type="text" id="website" name="user_website" class="form-control" placeholder="Where do you post your cosplay photos?">
+	
+	<label for="character"></label>
+	<input type="text" id="character" name="user_character" class="form-control" placeholder="What character are you interested in commissioning?">
+
+	<label for="series"></label>
+	<input type="text" id="series" name="user_series" class="form-control" placeholder="What series is your character from?">
+
+	<label for="variant"></label>
+	<input type="text" id="name" name="user_variant" class="form-control" placeholder="Variant (optional)">
+	
+	<label for="references"></label>
+	<textarea id="references" name="user_references" class="form-control" placeholder="Links to reference photos"></textarea>
+
+	<label for="due_date">Desired due date</label>
+	<input type="date" id="due_date" name="user_due_date" class="form-control" placeholder="Desired due date">
+
+	<label for="pieces"></label>
+	<textarea id="pieces" name="user_pieces" class="form-control" placeholder="What pieces of the costume do you need? Note: I do not accept wig or prop commissions."></textarea>
+
+	<label for="measurements"></label>
+	<textarea id="measurements" name="user_measurements" class="form-control" placeholder="Basic measurements (height, bust-waist-hip or US clothing size)"></textarea>
+
+	<label for="message"></label>
+	<textarea id="message" name="user_message" class="form-control" placeholder="Add any additional comments or notes here"></textarea>
+
+	<br>
+	<button type="" class="btn btn-default">Send</button>
+</form>	

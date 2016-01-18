@@ -18,39 +18,42 @@
 </head>
 <body>
 <!-- BOOTSTRAP NAVBAR -->
-	<nav class='navbar navbar-default navbar-fixed-top'>
-        <div class='container-fluid'>
-	        <div class='navbar-header'>
-                <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
-	                <span class='sr-only'>Toggle navigation</span>
-	                <span class='icon-bar'></span>
-	                <span class='icon-bar'></span>
-	                <span class='icon-bar'></span>
-	            </button>
-	            <div class='navbar-brand'>
-	                <%= link_to image_tag('new-m-logo.png'), root_path %>
-	            </div>
-	        </div>
+    <div class="wrap">
+        <nav class='navbar navbar-default navbar-fixed-top'>
+            <div class='container-fluid'>
+                <div class='navbar-header'>
+                    <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
+                        <span class='sr-only'>Toggle navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                    <div class='navbar-brand'>
+                        <%= link_to image_tag('new-m-logo.png'), root_path %>
+                    </div>
+                </div>
 
-            <div class='collapse navbar-collapse' id="bs-example-navbar-collapse-1">
-                <ul class='nav navbar-nav'>
-                    <li><%= link_to 'home', root_path %></li>
-                    <li><%= link_to 'code', code_path %></li>
-                    <li><%= link_to 'costumes', costumes_path %></li>
-                    <li><%= link_to 'commissions', commissions_path %></li>
-                    <li><%= link_to 'shops', shops_path %></li>
-                </ul>
-                <ul class='nav navbar-nav navbar-right'>
-                    <li><%= link_to 'about', about_path %></li>
-                    <li><%= link_to 'contact', contact_path %></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+                <div class='collapse navbar-collapse' id="bs-example-navbar-collapse-1">
+                    <ul class='nav navbar-nav'>
+                        <li><%= link_to 'home', root_path %></li>
+                        <li><%= link_to 'code', code_path %></li>
+                        <li><%= link_to 'costumes', costumes_path %></li>
+                        <li><%= link_to 'commissions', commissions_path %></li>
+                        <li><%= link_to 'shops', shops_path %></li>
+                    </ul>
+                    <ul class='nav navbar-nav navbar-right'>
+                        <li><%= link_to 'about', about_path %></li>
+                        <li><%= link_to 'contact', contact_path %></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
-<%= yield %>
+        <%= yield %>
 
-<div class="buffer"></div>
+        <!-- <div class="buffer"></div> -->
+    </div>
+	
 	
 	<!-- FOOTER -->
 	<footer class='container-fluid'>
