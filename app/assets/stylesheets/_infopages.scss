@@ -2,6 +2,7 @@
 .headshot img {
 	margin: auto;
 	padding: 25px;
+	border-radius: 50%;
 }
 
 .bio {
@@ -17,6 +18,26 @@
 		font-size: 1.5em;
 		font-weight: 700;
 		margin-top: 50px;
+		margin-left: 5px;
+	}
+}
+
+.bio-list {
+	list-style: none;
+	padding-left: 20px;
+	li {
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+	}
+	i {
+		color: $accentColor;
+		font-size: 1.75em;
+		margin-right: 15px;
+		&.arrow {
+			margin: 0 5px;
+			font-size: 1em;
+		}
 	}
 }
 
@@ -87,7 +108,7 @@
 	border-radius: 0;
 }
 
-.email-form {
+.commission-form {
 	display: none;
 }
 .email-form, .commission-form {

@@ -54,7 +54,7 @@
 }
 
 .features {
-	margin: 0;
+	margin: -1px 0 0;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
@@ -70,7 +70,6 @@
 			margin-left: -69px;
 		}
 	}
-
 	@media screen and (min-width: 830px){
 		.feature:first-child {
 			margin-right: -81px;
@@ -79,7 +78,6 @@
 			margin-left: -81px;
 		}
 	}
-
 	@media screen and (min-width: 900px){
 		.feature:first-child {
 			margin-right: -88px;
@@ -88,7 +86,6 @@
 			margin-left: -88px;
 		}
 	}
-
 	@media screen and (min-width: 1000px){
 		margin: 0 0 0 -10px;
 		.feature:first-child {
@@ -98,20 +95,46 @@
 			margin-left: -100px;
 		}
 	}
+
+	@-moz-document url-prefix() { 
+		//adjust sizing for firefox!
+	  	.feature:first-child {
+	  		margin-right: 0;
+	  	}
+	  	.feature:last-child {
+	  		margin-left: 0;
+	  	}
+	  	.feature {
+	  		width: 33%;
+	  		img {
+	  			width: 100%;
+	  			max-height: auto;
+	  		}
+	  	}
+	}
 	
 	a.feature {
 		max-height: 300px;
 		overflow: hidden;
+		position: relative;
 		align-self: center;
 		&:hover {
 			text-decoration: none;
 		}
 
 		p {
-			display: none;
+			position: absolute;
+			top: 0;
+			right: 30px;
+			font-size: 3em;
 		}
-
+		&.code p {
+				color: $lightColor;
+		}
 		&.costumes p {
+			color: $accentColor;
+		}
+		&.commissions p {
 			color: $mainColor;
 		}
 
@@ -121,7 +144,9 @@
 			@media screen and (min-width: 768px) {
 				width: 275px;
 				clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-				-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+				clip-path: url("#clip-shape");
+					-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+					-webkit-clip-path: url("#clip-shape"); 
 			}
 			@media screen and (min-width: 830px) {
 				width: 325px;
